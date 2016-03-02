@@ -1,0 +1,41 @@
+.red-b {
+  border: red 2px solid;
+}
+
+html, body{
+  margin: 0;
+}
+
+.top-bar{
+  display:block;
+  height: 40px;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+}
+
+.side-nav{
+  position: fixed;
+  top: 50%;
+  right: 54px;
+  width: 54px;
+}
+
+.main-wrap{
+  margin: 0 auto;
+  width: calc(100% - 80px);
+  max-width: 1440px;
+}
+
+.content-container {
+  width: 85%;
+  max-width: 85%;
+  margin: 20px 0;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
