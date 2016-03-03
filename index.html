@@ -21,6 +21,8 @@
 
 </head>
 <body>
+  <!-- *******   Top Bar   ****** -->
+
   <header class="top-bar red-b">
     <div class="left-top">
       <p>id mark<p>
@@ -34,11 +36,18 @@
       </a>
     </div>
   </header>
-  <nav class="side-nav red-b">
-    <ul data-bind="foreach: collectionList" class="menu-container">
+
+  <!-- ****   Navigation   ****  -->
+
+  <nav class="red-b">
+    <ul data-bind="foreach: collectionList" class="lower-side-nav menu-container">
       <li data-bind="text: name, click: $parent.setCollection" class="menu-item"></li>
     </ul>
+    <ul data-bind="with: activeCollection" class="active-side-nav menu-container">
+      <li data-bind="text: name" class="menu-item"></li>
+    </ul>
   </nav>
+  <!-- *****   Main Content   *****  -->
   <section class="main-wrap red-b" data-bind="with: activeCollection">
     <!-- container for setting boundaries -->
     <div class="content-container red-b" data-bind="foreach: images">

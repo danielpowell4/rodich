@@ -39,6 +39,7 @@ var ViewModel = function() {
   });
 
   this.activeCollection = ko.observable( this.collectionList()[0] );
+  console.log(that.activeCollection());
 
   this.setCollection = function(clickedCollection) {
     that.activeCollection(clickedCollection);

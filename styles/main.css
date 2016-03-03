@@ -50,7 +50,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     display: inline-block;
 }
 
-.secondary-nav a svg {
+.right-top a svg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,9 +63,17 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 }
 
 /* side bar naviagation */
-.side-nav{
+
+.active-side-nav{
+  top: 26%;
   position: fixed;
+  right: 54px;
+  width: 54px;
+}
+
+.lower-side-nav{
   top: 67%;
+  position: fixed;
   right: 54px;
   width: 54px;
 }
