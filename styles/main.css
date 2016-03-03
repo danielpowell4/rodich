@@ -105,3 +105,10 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   height: auto;
   margin: 2em 0;
 }
+
+.all-text-layout {
+  max-width: 260px;
+  margin: 0 auto;
+}
+/* dropcap */
+.all-text-text:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }

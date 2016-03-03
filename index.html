@@ -49,9 +49,20 @@
   </nav>
   <!-- *****   Main Content   *****  -->
   <section class="main-wrap red-b" data-bind="with: activeCollection">
+
     <!-- container for setting boundaries -->
-    <div class="content-container red-b" data-bind="foreach: images">
+    <div class="content-container red-b">
+
+      <!-- all photoLayout -->
+      <div data-bind="foreach: images">
         <img class="img red-b" data-bind="attr: { src: $data }">
+      </div>
+
+      <!-- all text layout -->
+      <div class="all-text-layout">
+        <p class="all-text-text" data-bind="text: text"><p>
+      </div>
+
     </div>
 
   </section>

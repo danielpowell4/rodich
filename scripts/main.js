@@ -3,7 +3,7 @@
   * ----------------------------------------------------------------------------
   **/
 
-var photoCollections = [
+var allCollections = [
   {
     name: 'Street',
     images : ['img/street/AttaqueFrancais1.jpg', 'img/street/AttaqueFrancais2.jpg']
@@ -16,13 +16,21 @@ var photoCollections = [
   }, {
     name: 'Faces',
     images : ['img/faces/LukaIanSmoke.jpg', 'img/spaces/SRDBacklit.jpg']
+  },  {
+    name: 'About',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   }
 ];
+
+var allText = [
+
+]
 
 // this is a data node
 var collection = function(data) {
   this.name = ko.observable(data.name);
   this.images = ko.observableArray(data.images);
+  this.text = ko.observable(data.text);
 }
 
 /** ----------------------------------------------------------------------------
@@ -34,7 +42,7 @@ var ViewModel = function() {
 
   this.collectionList = ko.observableArray([]);
 
-  photoCollections.forEach(function(group){
+  allCollections.forEach(function(group){
     that.collectionList.push( new collection(group) );
   });
 
