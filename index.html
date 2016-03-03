@@ -2,18 +2,30 @@
 <head>
   <!-- Viewport tag for responsivity -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- important tags for site indexing on google / browser headers -->
-  <meta property="og:url" content="http://www.nytimes.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Breaking News, World News & Multimedia" />
-  <meta property="og:description" content="The New York Times: Find breaking news, multimedia, reviews & opinion on Washington, business, sports, movies, travel, books, jobs, education, real estate, cars & more at nytimes.com." />
-  <meta property="og:image" content="http://static01.nyt.com/images/icons/t_logo_291_black.png" />
+    <!-- What is shown on in the tab itself-->
+    <title>Blake Rodich</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://media005.flaticon.com/img/favicon.png">
+
+    <!-- other property tags worthwhile -->
+    <meta property="og:url" content="http://www.nytimes.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Breaking News, World News & Multimedia" />
+    <meta property="og:description" content="The New York Times: Find breaking news, multimedia, reviews & opinion on Washington, business, sports, movies, travel, books, jobs, education, real estate, cars & more at nytimes.com." />
+    <meta property="og:image" content="http://static01.nyt.com/images/icons/t_logo_291_black.png" />
+
   <!-- stylesheets -->
   <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body>
   <header class="top-bar red-b">
-    <div class="secondary-nav">
+    <div class="left-top">
+      <p>id mark<p>
+    </div>
+    <div class="right-top">
       <a href="mailto:blake@gmail.com">
         MAIL<svg></svg>
       </a>
@@ -22,19 +34,24 @@
       </a>
     </div>
   </header>
-  <nav class="side-nav red-b">sidebar
+  <nav class="side-nav red-b">
+    <ul data-bind="foreach: collectionList" class="menu-container">
+      <li data-bind="text: name, click: $parent.setCollection" class="menu-item"></li>
+    </ul>
   </nav>
-  <section class="main-wrap red-b">main
+  <section class="main-wrap red-b" data-bind="with: activeCollection">
     <!-- container for setting boundaries -->
-    <div class="content-container red-b">
-      <img class="img red-b" src="img/AttaqueFrancais1.jpg">
-      <img class="img red-b" src="img/AttaqueFrancais2.jpg">
-      <img class="img red-b" src="img/EP_15x10_1.jpg">
-      <img class="img red-b" src="img/IanSmoke.jpg">
-      <img class="img red-b" src="img/LukaIanSmoke.jpg">
-      <img class="img red-b" src="img/SRD_acwdetail.jpg">
-      <img class="img red-b" src="img/SRDBacklit.jpg">
+    <div class="content-container red-b" data-bind="foreach: images">
+        <img class="img red-b" data-bind="attr: { src: $data }">
     </div>
 
   </section>
+
+  <!-- scripts -->
+
+    <!-- knockout from cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    <!-- main -->
+    <script src="scripts/main.js"></script>
+
 </body>

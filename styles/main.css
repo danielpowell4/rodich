@@ -23,7 +23,18 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   background-color: #fff;
 }
 
-.secondary-nav{
+.left-top{
+  display: flex;
+  position: absolute;
+  left: 40px;
+  width: 80px;
+  height: 40px;
+  background-color: #000;
+  color: white;
+  margin:auto;
+}
+
+.right-top{
   display: flex;
   position: absolute;
   right: 40px;
@@ -31,7 +42,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   height: 40px;
 }
 
-.secondary-nav a {
+.right-top a {
     position: relative;
     width: 50%;
     height: 100%;
@@ -54,9 +65,13 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 /* side bar naviagation */
 .side-nav{
   position: fixed;
-  top: 50%;
+  top: 67%;
   right: 54px;
   width: 54px;
+}
+
+.menu-container{
+  list-style: none;
 }
 
 /* main content wrap and container */
@@ -69,7 +84,11 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 .content-container {
   width: 85%;
   max-width: 85%;
-  margin: 20px 0;
+  margin: 40px 0;
+}
+
+.content-container :first-child{
+  margin: 0;
 }
 
 /* main content tags */
