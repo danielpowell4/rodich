@@ -19,10 +19,14 @@
   <!-- stylesheets -->
   <link rel="stylesheet" href="styles/main.css">
 
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body>
-  <!-- *******   Top Bar   ****** -->
 
+  <!-- ****   Top Bar   ****  -->
   <header class="top-bar red-b">
     <div class="left-top">
       <p>id mark<p>
@@ -40,28 +44,44 @@
   <!-- ****   Navigation   ****  -->
 
   <nav class="red-b">
-    <ul data-bind="foreach: collectionList" class="lower-side-nav menu-container">
-      <li data-bind="text: name, click: $parent.setCollection" class="menu-item"></li>
+    <ul data-bind="foreach: categories" class="lower-side-nav menu-container">
+      <li data-bind="text: text, click: setCategory, css:{activeItem: activeCategory() === $data}" class="menu-item"></li>
     </ul>
-    <ul data-bind="with: activeCollection" class="active-side-nav menu-container">
-      <li data-bind="text: name" class="menu-item"></li>
+    <ul data-bind="foreach: collections" class="active-side-nav menu-container">
+      <li data-bind="text: text, click: setCollection, css:{activeItem: activeCollection() === $data}" class="menu-item"></li>
     </ul>
   </nav>
+
   <!-- *****   Main Content   *****  -->
   <section class="main-wrap red-b" data-bind="with: activeCollection">
 
     <!-- container for setting boundaries -->
     <div class="content-container red-b">
 
-      <!-- all photoLayout -->
-      <div data-bind="foreach: images">
-        <img class="img red-b" data-bind="attr: { src: $data }">
+      <!-- *** div with items of activeCollection *** -->
+      <div data-bind="with: childOptions">
+
+        <!-- *****   writeUpLayout   ***** -->
+        <div data-bind="if: writeUp" class="all-text-layout">
+          <p class="all-text-text red-b" data-bind="text: writeUp"></p>
+        </div>
+
+        <!-- *****   all mixedLayout   ***** -->
+        <div data-bind="if: pullOutCopy" class="mixed-layout-container">
+          <div class="mixed-item" data-bind="text: pullOutCopy"></div>
+          <div class="mixed-item item1" data-bind="html: item1"></div>
+        </div>
+
+        <!-- *****   all photoLayout   ***** -->
+        <span data-bind="if: image">
+          <span data-bind="foreach: image">
+            <img class="img red-b" data-bind="attr: { src: $data }">
+          </span>
+        </span>
+
       </div>
 
-      <!-- all text layout -->
-      <div class="all-text-layout">
-        <p class="all-text-text" data-bind="text: text"><p>
-      </div>
+
 
     </div>
 

@@ -68,21 +68,28 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   top: 26%;
   position: fixed;
   right: 54px;
-  width: 54px;
+  width: 122px;
+  line-height: 1.5;
 }
 
 .lower-side-nav{
   top: 67%;
   position: fixed;
   right: 54px;
-  width: 54px;
+  width: 122px;
+  line-height: 2;
+  font-size: 18px;
 }
 
 .menu-container{
   list-style: none;
 }
 
-/* main content wrap and container */
+.activeItem {
+  color: red;
+}
+
+/* ----- main content wrap and container  ----- */
 .main-wrap{
   margin: 0 auto;
   width: calc(100% - 80px);
@@ -95,20 +102,47 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   margin: 40px 0;
 }
 
-.content-container :first-child{
-  margin: 0;
+.content-container:first-child {
+    margin: 0;
 }
 
-/* main content tags */
-.img {
-  max-width: 100%;
-  height: auto;
-  margin: 2em 0;
-}
+/*  ----- main content tags ----- */
 
-.all-text-layout {
-  max-width: 260px;
-  margin: 0 auto;
-}
-/* dropcap */
-.all-text-text:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }
+    /* --- Photo Layout ---*/
+      /* images */
+        .img {
+          max-width: 100%;
+          height: auto;
+          margin: 2em 0 0;
+        }
+
+    /* --- All Text Layout ---*/
+        /* all text container */
+          .all-text-layout {
+            max-width: 260px;
+            margin: 40px auto;
+          }
+
+        /* stylized dropcap */
+          .all-text-text:first-letter {
+            float: left;
+            color: #903;
+            font-size: 75px;
+            line-height: 60px;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left: 3px;
+            font-family: Georgia;
+          }
+
+    /* --- Mixed Layout --- */
+        /* first two item container */
+          .mixed-layout-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+          }
+
+          .item1 {
+            width: 60%;
+          }
