@@ -146,7 +146,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
-            margin: 40px auto;
+            margin: 40px auto 0;
           }
 
           .item1 {
