@@ -120,8 +120,13 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
         /* all text container */
           .all-text-layout {
             max-width: 260px;
-            margin: 40px auto;
+            margin: 0 auto;
           }
+
+        /* writeUp copy */
+        .all-text-text {
+          margin: 40px auto;
+        }
 
         /* stylized dropcap */
           .all-text-text:first-letter {
