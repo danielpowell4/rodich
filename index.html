@@ -67,9 +67,11 @@
         </div>
 
         <!-- *****   all mixedLayout   ***** -->
-        <div data-bind="if: pullOutCopy" class="mixed-layout-container">
-          <div class="mixed-item" data-bind="text: pullOutCopy"></div>
-          <div class="mixed-item item1" data-bind="html: item1"></div>
+        <div data-bind="if: pullOutCopy">
+          <div class="mixed-layout-container">
+            <div class="mixed-item" data-bind="text: pullOutCopy"></div>
+            <div class="mixed-item item1" data-bind="html: item1"></div>
+          </div>
         </div>
 
         <!-- *****   all photoLayout   ***** -->
