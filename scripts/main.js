@@ -66,41 +66,32 @@ function buildData(){
     **/
 
     var photography = new cascadingOption({
-        text: 'Photography',
+        text: 'PHOTO',
         childOptions : [
             new cascadingOption({
-                text:'Street',
+                text:'STREET',
                 childOptions : {
                     pullOutCopy : null,
                     item1 : null,
-                    image: ['img/street/AttaqueFrancais1.jpg', 'img/street/AttaqueFrancais2.jpg'],
+                    image: ['img/photo/street/1_IanSmoke.jpg', 'img/photo/street/2_LukaIanSmoke.jpg', 'img/photo/street/3_SRDBacklit.jpg', 'img/photo/street/4_SRD_acwdetail.jpg', 'img/photo/street/5_Parisunderground1.jpg', 'img/photo/street/6_Parisunderground2.jpg', 'img/photo/street/7_DiorStreetPhone.jpg'],
                     writeUp: null,
                 }
             }),
             new cascadingOption({
-                text:'Fashion',
+                text:'LOOK',
                 childOptions : {
                     pullOutCopy : null,
                     item1 : null,
-                    image: ['img/fashion/EP_15x10_1.jpg', 'img/fashion/IanSmoke.jpg'],
+                    image: ['img/photo/look/1_EP_15x10_2.jpg', 'img/photo/look/2_EP_15x10_1.jpg', 'img/photo/look/3_AttaqueFrancais1.jpg',  'img/photo/look/4_AttaqueFrancais2.jpg',],
                     writeUp: null,
                 }
             }),
             new cascadingOption({
-                text:'Places',
+                text:'FACES',
                 childOptions : {
                     pullOutCopy : null,
                     item1 : null,
-                    image: ['img/spaces/SRD_acwdetail.jpg', 'img/spaces/SRDBacklit.jpg'],
-                    writeUp: null,
-                }
-            }),
-            new cascadingOption({
-                text:'Faces',
-                childOptions : {
-                    pullOutCopy : null,
-                    item1 : null,
-                    image: ['img/faces/LukaIanSmoke.jpg', 'img/spaces/SRDBacklit.jpg'],
+                    image: ['img/photo/faces/1_Antoine_Berlin.jpg', 'img/photo/faces/2_Surkin_Headshot.jpg'],
                     writeUp: null,
                 }
             }),
