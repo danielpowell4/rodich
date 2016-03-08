@@ -52,7 +52,7 @@ function buildData(){
                 childOptions : {
                     pullOutCopy : null,
                     item1 : null,
-                    image: ['img/photo/look/1_EP_15x10_2.jpg', 'img/photo/look/2_EP_15x10_1.jpg', 'img/photo/look/3_AttaqueFrancais1.jpg',  'img/photo/look/4_AttaqueFrancais2.jpg',],
+                    image: ['img/photo/look/1_EP_first.jpg', 'img/photo/look/2_EP_15x10_1.jpg', 'img/photo/look/3_AttaqueFrancais1.jpg',  'img/photo/look/4_AttaqueFrancais2.jpg',],
                     writeUp: null,
                 }
             }),
