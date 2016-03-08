@@ -81,7 +81,7 @@ function buildData(){
               childOptions : {
                   pullOutCopy : 'hello world',
                   item1 : '<iframe width="560" height="315" src="https://www.youtube.com/embed/_mmXZ8YJdIk" frameborder="0" allowfullscreen></iframe>',
-                  image: ['img/emerging_media/APOSEMATISM/1_Aposematismcollage2.jpg', 'img/emerging_media/APOSEMATISM/2_Aposematismcollage1.jpg'],
+                  image: ['img/emerging_media/APOSEMATISM/1_AposematismCOLLAGE2.jpg', 'img/emerging_media/APOSEMATISM/2_Aposematismcollage1.jpg'],
                   writeUp: null,
               }
           }),
