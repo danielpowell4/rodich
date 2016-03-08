@@ -81,7 +81,7 @@ function buildData(){
               childOptions : {
                   pullOutCopy : 'hello world',
                   item1 : '<iframe width="560" height="315" src="https://www.youtube.com/embed/_mmXZ8YJdIk" frameborder="0" allowfullscreen></iframe>',
-                  image: ['img/emerging_media/APOSEMATISM/1_aposematismcollage2.jpg', 'img/emerging_media/APOSEMATISM/2_aposematismcollage1.jpg'],
+                  image: ['img/emerging_media/APOSEMATISM/1_Aposematismcollage2.jpg', 'img/emerging_media/APOSEMATISM/2_Aposematismcollage1.jpg'],
                   writeUp: null,
               }
           }),
@@ -90,7 +90,7 @@ function buildData(){
               childOptions : {
                   pullOutCopy : 'hello world',
                   item1 : '<iframe width="100%" height="380" src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
-                  image: ['img/emerging_media/BLUESCREEN/1_bluescreenschutte1.jpg', 'img/emerging_media/BLUESCREEN/2_bluescreenschuttestill.jpg'],
+                  image: ['img/emerging_media/BLUESCREEN/1_BluescreenSchutte1.jpg', 'img/emerging_media/BLUESCREEN/2_BluescreenSchutteStill.jpg'],
                   writeUp: null,
               }
           }),
