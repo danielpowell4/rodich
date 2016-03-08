@@ -43,7 +43,7 @@ function buildData(){
                 childOptions : {
                     pullOutCopy : null,
                     item1 : null,
-                    image: ['/img/photo/street/1_IanSmoke.jpg', 'img/photo/street/2_LukaIanSmoke.jpg', 'img/photo/street/3_SRDBacklit.jpg', 'img/photo/street/4_SRD_acwdetail.jpg', 'img/photo/street/5_Parisunderground1.jpg', 'img/photo/street/6_Parisunderground2.jpg', 'img/photo/street/7_DiorStreetPhone.jpg'],
+                    image: ['/rodich/img/photo/street/1_IanSmoke.jpg', 'img/photo/street/2_LukaIanSmoke.jpg', 'img/photo/street/3_SRDBacklit.jpg', 'img/photo/street/4_SRD_acwdetail.jpg', 'img/photo/street/5_Parisunderground1.jpg', 'img/photo/street/6_Parisunderground2.jpg', 'img/photo/street/7_DiorStreetPhone.jpg'],
                     writeUp: null,
                 }
             }),
