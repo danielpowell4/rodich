@@ -126,19 +126,28 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
         /* writeUp copy */
         .all-text-text {
           margin: 40px auto;
+          display: block;
         }
 
-        /* stylized dropcap */
-          .all-text-text:first-letter {
-            float: left;
-            color: #903;
-            font-size: 75px;
-            line-height: 60px;
-            padding-top: 4px;
-            padding-right: 8px;
-            padding-left: 3px;
-            font-family: Georgia;
-          }
+        .about-breakout:first-of-type{}
+
+        .line-1-name{}
+
+        .line-2-name{}
+
+        .line-3-name{}
+
+        .line-4-name{}
+
+        .about-breakout{}
+
+        .line-1{}
+
+        .line-2{}
+
+        .line-3{}
+
+        .line-4{}
 
     /* --- Mixed Layout --- */
         /* first two item container */

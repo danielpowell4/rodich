@@ -31,36 +31,6 @@ function buildData(){
 
 
   /** ------------------------------------------
-    *    About
-    * ------------------------------------------
-    **/
-
-    var about = new cascadingOption({
-        text: 'About',
-        childOptions : [
-            new cascadingOption({
-                text:'Values',
-                childOptions : {
-                    image: null,
-                    writeUp: 'About copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                    pullOutCopy: null,
-                    item1: null,
-                }
-            }),
-            new cascadingOption({
-                text:'Skills',
-                childOptions : {
-                    image: null,
-                    writeUp: 'Skills Copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-                    pullOutCopy: null,
-                    item1: null,
-                }
-            })
-        ]
-    });
-
-
-  /** ------------------------------------------
     *      Photography
     * ------------------------------------------
     **/
@@ -104,52 +74,89 @@ function buildData(){
       **/
 
   var emergingMedia = new cascadingOption({
-      text: 'Emerging Media',
+      text: 'EMERGING MEDIA',
       childOptions : [
           new cascadingOption({
-              text:'Wearable',
+              text:'APOSEMATISM',
               childOptions : {
                   pullOutCopy : 'hello world',
                   item1 : '<iframe width="560" height="315" src="https://www.youtube.com/embed/_mmXZ8YJdIk" frameborder="0" allowfullscreen></iframe>',
-                  image: ['img/spaces/SRD_acwdetail.jpg', 'img/spaces/SRDBacklit.jpg'],
+                  image: ['img/emerging_media/APOSEMATISM/1_aposematismcollage2.jpg', 'img/emerging_media/APOSEMATISM/2_aposematismcollage1.jpg'],
                   writeUp: null,
               }
           }),
           new cascadingOption({
-              text:'Performance',
+              text:'BLUESCREEN',
               childOptions : {
                   pullOutCopy : 'hello world',
                   item1 : '<iframe width="100%" height="380" src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
-                  image: ['img/spaces/SRD_acwdetail.jpg', 'img/spaces/SRDBacklit.jpg'],
+                  image: ['img/emerging_media/BLUESCREEN/1_bluescreenschutte1.jpg', 'img/emerging_media/BLUESCREEN/2_bluescreenschuttestill.jpg'],
                   writeUp: null,
               }
           }),
           new cascadingOption({
-              text:'Interactive',
+              text:'RECLAMATION',
               childOptions : {
                   pullOutCopy : null,
                   item1 : null,
-                  image: ['img/faces/LukaIanSmoke.jpg', 'img/spaces/SRDBacklit.jpg'],
+                  image: ['img/emerging_media/RECLAMATION/1_DGBR1.jpg', 'img/emerging_media/RECLAMATION/2_DGBR2.jpg', 'img/emerging_media/RECLAMATION/3_DGBR3.jpg'],
                   writeUp: null,
               }
           }),
           new cascadingOption({
-              text:'Visual',
+              text:'STAY ON TOP',
               childOptions : {
                   pullOutCopy : null,
                   item1 : null,
-                  image: ['img/street/AttaqueFrancais1.jpg', 'img/street/AttaqueFrancais2.jpg'],
+                  image: ['img/emerging_media/STAY_ON_TOP/1_Nick_jungleinst.jpg', 'img/emerging_media/STAY_ON_TOP/2_SOTstill1.jpg', 'img/emerging_media/STAY_ON_TOP/3_SOTstill2.jpg'],
+                  writeUp: null,
+              }
+          }),
+          new cascadingOption({
+              text:'STOPMOTION',
+              childOptions : {
+                  pullOutCopy : null,
+                  item1 : null,
+                  image: ['img/emerging_media/STOPMOTION/1_stopmotion.jpg', 'img/emerging_media/STOPMOTION/2_stopmotion.jpg', 'img/emerging_media/STOPMOTION/3_stopmotion.jpg', 'img/emerging_media/STOPMOTION/4_stopmotion.jpg', 'img/emerging_media/STOPMOTION/5_stopmotion.jpg', 'img/emerging_media/STOPMOTION/6_stopmotion.jpg', 'img/emerging_media/STOPMOTION/7_stopmotion.jpg'],
                   writeUp: null,
               }
           }),
       ]
   });
 
+  /** ------------------------------------------
+    *    About
+    * ------------------------------------------
+    **/
+
+    var about = new cascadingOption({
+        text: 'ABOUT',
+        childOptions : [
+            new cascadingOption({
+                text:'SHOWS',
+                childOptions : {
+                    image: null,
+                    writeUp:  "<div class='about-breakout'><p class='line-1-name'>Blake Rodich</p><p class='line-2-name'>Multidisciplinary Artist,</p><p class='line-3-name'>Designer and Photographer.</p><p class='line-4-name'>Based in Paris.</p></div>" +
+                              "<div class='about-breakout'><p class='line-1'>UNDERGROUND MUSIC SHOWCASE</p><p class='line-2'>July 2015</p><p class='line-3'>Performance, with Diamondstein.</p><p class='line-4'>Denver, Colorado</p></div>"+
+                              "<div class='about-breakout'><p class='line-1'>BROKENSTATION</p><p class='line-2'>July 2015</p><p class='line-3'>Performance, with Diamondstein.</p><p class='line-4'>Los Angeles, California</p></div>"+
+                              "<div class='about-breakout'><p class='line-1'>IMAGE.TEXT.MUSIC</p><p class='line-2'>January 2015</p><p class='line-3'>Juried Exhibition.</p><p class='line-4'>California State University Fullerton.</p></div>"+
+                              "<div class='about-breakout'><p class='line-1'>UNIVERSITY OF DENVER FACULTY TRIENNIAL</p><p class='line-2'>January 2015</p><p class='line-3'>Performance, with Darwin Grosse. </p><p class='line-4'>Denver, Colorado</p></div>"+
+                              "<div class='about-breakout'><p class='line-1'>BRANDS REMAIN</p><p class='line-2'>September 2014</p><p class='line-3'>Commission for Third Principle.</p><p class='line-4'>Denver, Colorado</p></div>"+
+                              "<div class='about-breakout'><p class='line-1'>SIX TO MIDNIGHT</p><p class='line-2'>July 2014</p><p class='line-3'>Performance, with Dan Grund.</p><p class='line-4'>Denver, Colorado.</p></div>"+
+                              "<div class='about-breakout'><p class='line-1'>STAY ON TOP</p><p class='line-2'>April 2014</p><p class='line-3'>Solo Exhibition.</p><p class='line-4'></p>Denver, Colorado.</div>",
+                    pullOutCopy: null,
+                    item1: null,
+                }
+            }),
+        ]
+    });
+
+
   /** ---------------------------------------------------------------
    *      Make sure to return all the variable you're after
    * ----------------------------------------------------------------
    **/
-    return [about, photography, emergingMedia];
+    return [photography, emergingMedia, about];
 }
 
 var viewModel = function() {
