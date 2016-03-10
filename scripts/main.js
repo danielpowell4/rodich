@@ -79,8 +79,8 @@ function buildData(){
           new cascadingOption({
               text:'APOSEMATISM',
               childOptions : {
-                  pullOutCopy : 'hello world',
-                  item1 : '<iframe width="560" height="315" src="https://www.youtube.com/embed/_mmXZ8YJdIk" frameborder="0" allowfullscreen></iframe>',
+                  pullOutCopy : "<span>Antipredator colorations have long been used in the animal kingdom to deter threats. Both predator and prey benefit from this adaptation, both avoiding their own potential demise.</span> <span>Concept is explored through a series of garments with wearable computing components.</span><span>Sleeve.<br/> Bend sensor controls series of LEDs in Neoprene sleeve. 4 unique bend thresholds correspond to respective series of LEDs, which illuminate when the wearer bends his or her arm.</span><span> Sweatshirt.<br/> Wearable computing components are used to control series of superbright Red LEDs. A pulse sensor monitors wearer's heart rate. Above a specified threshold, LEDs on back of garment illuminate. When hood is worn, magnet sensor illuminates a series of LEDs silhouetting wearer’s face.</span>",
+                  item1 : null,
                   image: ['img/emerging_media/APOSEMATISM/1_AposematismCOLLAGE2.jpg', 'img/emerging_media/APOSEMATISM/2_Aposematismcollage1.jpg'],
                   writeUp: null,
               }
@@ -88,7 +88,7 @@ function buildData(){
           new cascadingOption({
               text:'BLUESCREEN',
               childOptions : {
-                  pullOutCopy : 'hello world',
+                  pullOutCopy : '<span>Self Displacement.</span><span>Displacement of self through technology. Viewer’s reflection is multiplied and distorted with limited control offered to the viewer.</span><span>Viewer operates Arduino based one-of Midi controller which manipulates audio and visual parameters in the system.</span><span>No instructions provided.</span>',
                   item1 : '<iframe width="100%" height="380" src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
                   image: ['img/emerging_media/BLUESCREEN/1_BluescreenSchutte1.jpg', 'img/emerging_media/BLUESCREEN/2_BluescreenSchutteStill.jpg'],
                   writeUp: null,
@@ -97,7 +97,7 @@ function buildData(){
           new cascadingOption({
               text:'RECLAMATION',
               childOptions : {
-                  pullOutCopy : null,
+                  pullOutCopy : '<span>Visual Performance alongside University Professor Darwin Grosse.</span><span>Series of visual sets draw conceptual and visual elements from land reclamation of both natural and man-made habitats.</span>',
                   item1 : null,
                   image: ['img/emerging_media/RECLAMATION/1_DGBR1.jpg', 'img/emerging_media/RECLAMATION/2_DGBR2.jpg', 'img/emerging_media/RECLAMATION/3_DGBR3.jpg'],
                   writeUp: null,
@@ -115,7 +115,7 @@ function buildData(){
           new cascadingOption({
               text:'STOPMOTION',
               childOptions : {
-                  pullOutCopy : null,
+                  pullOutCopy : '<span>Platform created to explore deviations from standard linear film recording. </span><span>Arduino takes input from bend sensor within wearer’s glove and fires LED strobe when bend threshold is passed. Frame is grabbed from camera and inserted into generated loop of video, lengthening as the user contributes more frames. </span>',
                   item1 : null,
                   image: ['img/emerging_media/STOPMOTION/1_stopmotion.jpg', 'img/emerging_media/STOPMOTION/2_stopmotion.jpg', 'img/emerging_media/STOPMOTION/3_stopmotion.jpg', 'img/emerging_media/STOPMOTION/4_stopmotion.jpg', 'img/emerging_media/STOPMOTION/5_stopmotion.jpg', 'img/emerging_media/STOPMOTION/6_stopmotion.jpg', 'img/emerging_media/STOPMOTION/7_stopmotion.jpg'],
                   writeUp: null,
