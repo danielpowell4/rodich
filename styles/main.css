@@ -86,6 +86,11 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   list-style: none;
 }
 
+.menu-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .activeItem {
   color: red;
 }
