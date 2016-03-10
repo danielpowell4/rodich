@@ -143,7 +143,7 @@ function buildData(){
                               "<div class='about-breakout'><p class='line-1'>UNIVERSITY OF DENVER FACULTY TRIENNIAL</p><p class='line-2'>January 2015</p><p class='line-3'>Performance, with Darwin Grosse. </p><p class='line-4'>Denver, Colorado</p></div>"+
                               "<div class='about-breakout'><p class='line-1'>BRANDS REMAIN</p><p class='line-2'>September 2014</p><p class='line-3'>Commission for Third Principle.</p><p class='line-4'>Denver, Colorado</p></div>"+
                               "<div class='about-breakout'><p class='line-1'>SIX TO MIDNIGHT</p><p class='line-2'>July 2014</p><p class='line-3'>Performance, with Dan Grund.</p><p class='line-4'>Denver, Colorado.</p></div>"+
-                              "<div class='about-breakout'><p class='line-1'>STAY ON TOP</p><p class='line-2'>April 2014</p><p class='line-3'>Solo Exhibition.</p><p class='line-4'></p>Denver, Colorado.</div>",
+                              "<div class='about-breakout'><p class='line-1'>STAY ON TOP</p><p class='line-2'>April 2014</p><p class='line-3'>Solo Exhibition.</p><p class='line-4'>Denver, Colorado.</p></div>",
                     pullOutCopy: null,
                     item1: null,
                 }
