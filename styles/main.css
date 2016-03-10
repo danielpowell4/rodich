@@ -1,6 +1,6 @@
 /* for build only */
 .red-b {
-  border: red 2px solid;
+
 }
 
 /* essential overrides */
@@ -30,8 +30,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   left: 40px;
   width: 80px;
   height: 40px;
-  background-color: #000;
-  color: white;
   margin:auto;
 }
 
@@ -92,7 +90,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 }
 
 .activeItem {
-  color: red;
+  color: #aaa;
 }
 
 /* ----- main content wrap and container  ----- */
