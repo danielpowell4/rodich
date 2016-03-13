@@ -184,7 +184,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
              overflow:
              hidden;
              max-width: 100%;
-
           }
           .embed-container iframe, .embed-container object, .embed-container embed {
             position: absolute;
