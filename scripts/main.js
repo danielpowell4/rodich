@@ -89,7 +89,7 @@ function buildData(){
               text:'BLUESCREEN',
               childOptions : {
                   pullOutCopy : '<span>Self Displacement.</span><span>Displacement of self through technology. Viewer’s reflection is multiplied and distorted with limited control offered to the viewer.</span><span>Viewer operates Arduino based one-of Midi controller which manipulates audio and visual parameters in the system.</span><span>No instructions provided.</span>',
-                  item1 : '<iframe width="100%" height="380" src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
+                  item1 : '<iframe src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
                   image: ['img/emerging_media/BLUESCREEN/1_BluescreenSchutte1.jpg', 'img/emerging_media/BLUESCREEN/2_BluescreenSchutteStill.jpg'],
                   writeUp: null,
               }
