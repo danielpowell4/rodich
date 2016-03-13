@@ -66,11 +66,18 @@
         </div>
 
         <!-- *****   all mixedLayout   ***** -->
-        <div data-bind="if: pullOutCopy">
-          <div class="mixed-layout-container">
-            <div class="mixed-item mixed-copy" data-bind="html: pullOutCopy"></div>
-            <div class="mixed-item embed-container item1" data-bind="html: item1"></div>
-          </div>
+        <div data-bind="if: intro">
+
+          <span data-bind="with: intro">
+
+              <div data-bind="foreach:section" class="mixed-layout-container">
+                <div class="mixed-item mixed-copy" data-bind="html: $data.imageSideCopy"></div>
+                <div class="mixed-item item1">
+                  <div class="embed-container" data-bind="html: $data.item"></div>
+                </div>
+              </div>
+
+          </span> <!-- with intro -->
         </div>
 
         <!-- *****   all photoLayout   ***** -->
