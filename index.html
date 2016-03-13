@@ -70,10 +70,12 @@
 
           <span data-bind="with: intro">
 
-              <div data-bind="foreach:section" class="mixed-layout-container">
-                <div class="mixed-item mixed-copy" data-bind="html: $data.imageSideCopy"></div>
-                <div class="mixed-item item1">
-                  <div class="embed-container" data-bind="html: $data.item"></div>
+              <div data-bind="foreach:section" style="display: block">
+                <div class="mixed-layout-container">
+                  <div class="mixed-item mixed-copy" data-bind="html: $data.imageSideCopy"></div>
+                  <div class="mixed-item item1">
+                    <div class="embed-container" data-bind="html: $data.item"></div>
+                  </div>
                 </div>
               </div>
 

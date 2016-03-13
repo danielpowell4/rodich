@@ -82,9 +82,12 @@ function buildData(){
           new cascadingOption({
               text:'APOSEMATISM',
               childOptions : {
-                  intro: null,
-                  pullOutCopy : "<span>Antipredator colorations have long been used in the animal kingdom to deter threats. Both predator and prey benefit from this adaptation, both avoiding their own potential demise.</span> <span>Concept is explored through a series of garments with wearable computing components.</span><span>Sleeve.<br/> Bend sensor controls series of LEDs in Neoprene sleeve. 4 unique bend thresholds correspond to respective series of LEDs, which illuminate when the wearer bends his or her arm.</span><span> Sweatshirt.<br/> Wearable computing components are used to control series of superbright Red LEDs. A pulse sensor monitors wearer's heart rate. Above a specified threshold, LEDs on back of garment illuminate. When hood is worn, magnet sensor illuminates a series of LEDs silhouetting wearer’s face.</span>",
-                  item1 : null,
+                  intro: {
+                    section: [{
+                        imageSideCopy: "<span>Antipredator colorations have long been used in the animal kingdom to deter threats. Both predator and prey benefit from this adaptation, both avoiding their own potential demise.</span> <span>Concept is explored through a series of garments with wearable computing components.</span><span>Sleeve.<br/> Bend sensor controls series of LEDs in Neoprene sleeve. 4 unique bend thresholds correspond to respective series of LEDs, which illuminate when the wearer bends his or her arm.</span><span> Sweatshirt.<br/> Wearable computing components are used to control series of superbright Red LEDs. A pulse sensor monitors wearer's heart rate. Above a specified threshold, LEDs on back of garment illuminate. When hood is worn, magnet sensor illuminates a series of LEDs silhouetting wearer’s face.</span>",
+                        item: null,
+                      }],
+                  },
                   image: ['img/emerging_media/APOSEMATISM/1_AposematismCOLLAGE2.jpg', 'img/emerging_media/APOSEMATISM/2_Aposematismcollage1.jpg'],
                   writeUp: null,
               }
@@ -98,8 +101,6 @@ function buildData(){
                       item: '<iframe src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
                     }],
                 },
-                pullOutCopy : '<span>Self Displacement.</span><span>Displacement of self through technology. Viewer’s reflection is multiplied and distorted with limited control offered to the viewer.</span><span>Viewer operates Arduino based one-of Midi controller which manipulates audio and visual parameters in the system.</span><span>No instructions provided.</span>',
-                item1 : '<iframe src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
                 image: ['img/emerging_media/BLUESCREEN/1_BluescreenSchutte1.jpg', 'img/emerging_media/BLUESCREEN/2_BluescreenSchutteStill.jpg'],
                 writeUp: null,
               }
@@ -107,9 +108,13 @@ function buildData(){
           new cascadingOption({
               text:'RECLAMATION',
               childOptions : {
-                  intro: null,
-                  pullOutCopy : '<span>Visual Performance alongside University Professor Darwin Grosse.</span><span>Series of visual sets draw conceptual and visual elements from land reclamation of both natural and man-made habitats.</span>',
-                  item1 : null,
+                  intro: {
+                    section: [
+                      {
+                        imageSideCopy: '<span>Visual Performance alongside University Professor Darwin Grosse.</span><span>Series of visual sets draw conceptual and visual elements from land reclamation of both natural and man-made habitats.</span>',
+                        item: '<iframe src="https://vimeo.com/118715159" frameborder="0" allowfullscreen></iframe>',
+                      }],
+                  },
                   image: ['img/emerging_media/RECLAMATION/1_DGBR1.jpg', 'img/emerging_media/RECLAMATION/2_DGBR2.jpg', 'img/emerging_media/RECLAMATION/3_DGBR3.jpg'],
                   writeUp: null,
               }
@@ -117,7 +122,17 @@ function buildData(){
           new cascadingOption({
               text:'STAY ON TOP',
               childOptions : {
-                  intro: null,
+                  intro: {
+                    section: [
+                      {
+                        imageSideCopy: '<span>An investigation into the perils and unforeseen consequences of unrelenting competition, limitless potential and Emile Durkheim’s Anomie through William Golding’s famous novel The Lord of the Flies.</span><span>Installation.</span>',
+                        item: '<iframe src="https://vimeo.com/92481482" frameborder="0" allowfullscreen></iframe>',
+                      },
+                      {
+                        imageSideCopy: "<span>10 minute live visual performance as the centerpiece of the works. Modern music samples mirror the increasingly aggressive behavior exhibited by the young boys. Artists evoke questions of power, competition amongst rivals, and the loss of innocence. Ultimately, tensions climax as the boys unknowingly murder one of their own.</span><span>Stay On Top.</span>",
+                        item: '<iframe src="https://vimeo.com/92340669" frameborder="0" allowfullscreen></iframe>',
+                      }],
+                  },
                   pullOutCopy : null,
                   item1 : null,
                   image: ['img/emerging_media/STAY_ON_TOP/1_Nick_jungleinst.jpg', 'img/emerging_media/STAY_ON_TOP/2_SOTstill1.jpg', 'img/emerging_media/STAY_ON_TOP/3_SOTstill2.jpg'],
@@ -127,7 +142,12 @@ function buildData(){
           new cascadingOption({
               text:'STOPMOTION',
               childOptions : {
-                  intro: null,
+                  intro: {
+                    section: [{
+                        imageSideCopy: '<span>Self Displacement.</span><span>Displacement of self through technology. Viewer’s reflection is multiplied and distorted with limited control offered to the viewer.</span><span>Viewer operates Arduino based one-of Midi controller which manipulates audio and visual parameters in the system.</span><span>No instructions provided.</span>',
+                        item: '<iframe src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
+                      }],
+                  },
                   pullOutCopy : '<span>Platform created to explore deviations from standard linear film recording. </span><span>Arduino takes input from bend sensor within wearer’s glove and fires LED strobe when bend threshold is passed. Frame is grabbed from camera and inserted into generated loop of video, lengthening as the user contributes more frames. </span>',
                   item1 : null,
                   image: ['img/emerging_media/STOPMOTION/1_stopmotion.jpg', 'img/emerging_media/STOPMOTION/2_stopmotion.jpg', 'img/emerging_media/STOPMOTION/3_stopmotion.jpg', 'img/emerging_media/STOPMOTION/4_stopmotion.jpg', 'img/emerging_media/STOPMOTION/5_stopmotion.jpg', 'img/emerging_media/STOPMOTION/6_stopmotion.jpg', 'img/emerging_media/STOPMOTION/7_stopmotion.jpg'],
