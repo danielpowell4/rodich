@@ -112,7 +112,7 @@ function buildData(){
                     section: [
                       {
                         imageSideCopy: '<span>Visual Performance alongside University Professor Darwin Grosse.</span><span>Series of visual sets draw conceptual and visual elements from land reclamation of both natural and man-made habitats.</span>',
-                        item: '<iframe src="https://vimeo.com/118715159" frameborder="0" allowfullscreen></iframe>',
+                        item: '<iframe src="https://player.vimeo.com/video/118715159" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                       }],
                   },
                   image: ['img/emerging_media/RECLAMATION/1_DGBR1.jpg', 'img/emerging_media/RECLAMATION/2_DGBR2.jpg', 'img/emerging_media/RECLAMATION/3_DGBR3.jpg'],
@@ -126,11 +126,11 @@ function buildData(){
                     section: [
                       {
                         imageSideCopy: '<span>An investigation into the perils and unforeseen consequences of unrelenting competition, limitless potential and Emile Durkheim’s Anomie through William Golding’s famous novel The Lord of the Flies.</span><span>Installation.</span>',
-                        item: '<iframe src="https://vimeo.com/92481482" frameborder="0" allowfullscreen></iframe>',
+                        item: '<iframe src="https://player.vimeo.com/video/92481482" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                       },
                       {
                         imageSideCopy: "<span>10 minute live visual performance as the centerpiece of the works. Modern music samples mirror the increasingly aggressive behavior exhibited by the young boys. Artists evoke questions of power, competition amongst rivals, and the loss of innocence. Ultimately, tensions climax as the boys unknowingly murder one of their own.</span><span>Stay On Top.</span>",
-                        item: '<iframe src="https://vimeo.com/92340669" frameborder="0" allowfullscreen></iframe>',
+                        item: '<iframe src="https://player.vimeo.com/video/92340669" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                       }],
                   },
                   pullOutCopy : null,
@@ -145,7 +145,7 @@ function buildData(){
                   intro: {
                     section: [{
                         imageSideCopy: '<span>Self Displacement.</span><span>Displacement of self through technology. Viewer’s reflection is multiplied and distorted with limited control offered to the viewer.</span><span>Viewer operates Arduino based one-of Midi controller which manipulates audio and visual parameters in the system.</span><span>No instructions provided.</span>',
-                        item: '<iframe src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
+                        item: '<iframe src="https://player.vimeo.com/video/82746292" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                       }],
                   },
                   pullOutCopy : '<span>Platform created to explore deviations from standard linear film recording. </span><span>Arduino takes input from bend sensor within wearer’s glove and fires LED strobe when bend threshold is passed. Frame is grabbed from camera and inserted into generated loop of video, lengthening as the user contributes more frames. </span>',
