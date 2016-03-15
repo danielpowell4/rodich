@@ -267,7 +267,11 @@ body{
 
   /* move navs to right of screen*/
   .menu-container{
-    right: 5.5vw;
+    right: 5.5vw!important;
+  }
+
+  body{
+    left: 0!important;
   }
 
   /* show secret-menu */
