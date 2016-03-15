@@ -21,6 +21,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
 }
 
 /* top bar naviagation */
@@ -47,6 +48,9 @@ body{
   margin:auto;
 }
 
+.secret-menu{
+  display: none;
+}
 .right-top{
   display: flex;
   position: absolute;
@@ -94,23 +98,20 @@ body{
 
 .active-side-nav{
   top: 26%;
-  position: fixed;
-  right: 5.5vw;
-  width: 130px;
   line-height: 1.5;
 }
 
 .lower-side-nav{
   top: 67%;
-  position: fixed;
-  right: 5.5vw;
-  width: 130px;
   line-height: 2;
   font-size: 14px;
 }
 
 .menu-container{
   list-style: none;
+  position: fixed;
+  right: 5.5vw;
+  width: 130px;
 }
 
 .menu-item{
@@ -225,3 +226,51 @@ body{
           .item1 {
             width: 60%;
           }
+
+/* views for mobile (under 1144px) */
+@media screen and (max-width: 1144px){
+
+  /* change content fill the screen*/
+  .content-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* move navs to right of screen*/
+  .menu-container{
+    right: -240px;
+  }
+
+  /* show secret-menu */
+  .secret-menu{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+  }
+
+  .secret-menu:hover{
+    cursor: pointer;
+  }
+
+}
+/* switch back to normal view */
+@media screen and (min-width: 1145px){
+
+  /* change content fill the screen*/
+  .content-container {
+    width: 85%;
+    max-width: 85%;
+    margin: 6vh 0;
+  }
+
+  /* move navs to right of screen*/
+  .menu-container{
+    right: 5.5vw;
+  }
+
+  /* show secret-menu */
+  .secret-menu{
+    display: none
+}

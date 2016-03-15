@@ -31,6 +31,9 @@
   <header class="top-bar red-b">
     <div class="left-top">
     </div>
+    <div class="secret-menu menu">
+      &#9776
+    </div>
   <!--  <div class="right-top">
       <a href="mailto:blake@gmail.com">
         <svg>
@@ -112,9 +115,47 @@
 
     <!-- knockout from cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    <!-- jQuery cause Dans lazy -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
     <!-- main -->
     <script src="scripts/main.js"></script>
     <!-- TypeKit -->
     <script src="https://use.typekit.net/vqs8zll.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <script>
+    // -- for moving the menu in mobile
+
+    $(function(){
+        $('.secret-menu').click(function(){
+          var iteration=$(this).data('iteration')||1
+          switch ( iteration) {
+            case 1:
+                  // odd clicks
+                  $('body').animate({
+                    left: "-14.5vw"
+                  }, 200);
+                  $('.menu-container').animate({
+                    right: "5.5vw"
+                  }, 200);
+              break;
+
+            case 2:
+                  // odd clicks
+                  $('body').animate({
+                    left: "0px"
+                  }, 200);
+                  $('.menu-container').animate({
+                    right: "-240px"
+                  }, 200);
+              break;
+          }
+          iteration++;
+          if (iteration>2) iteration=1
+          $(this).data('iteration',iteration)
+        })
+      });
+
+
+    </script>
 </body>
