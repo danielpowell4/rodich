@@ -125,11 +125,15 @@ function buildData(){
                   intro: {
                     section: [
                       {
-                        imageSideCopy: '<span>An investigation into the perils and unforeseen consequences of unrelenting competition, limitless potential and Emile Durkheim’s Anomie through William Golding’s famous novel The Lord of the Flies.</span><span>Installation.</span>',
+                        imageSideCopy: '<span>STAY ON TOP</span><span>An investigation into the perils and unforeseen consequences of unrelenting competition, limitless potential and Emile Durkheim’s Anomie through William Golding’s famous novel The Lord of the Flies.</span>',
+                        item: null,
+                        },
+                      {
+                        imageSideCopy: '<span>Installation.</span><span>An immersive jungle environment 	is directly controlled by viewer’s behavior. Camera detects viewer presence and body movement. Presence, motion, and lack there of each trigger a unique response from the jungle environment. Continued movement triggers a violent storm, while stillness brings tranquility. Without any viewer present, the rainforest returns to standard conditions. Remain still.</span>',
                         item: '<iframe src="https://player.vimeo.com/video/92481482" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                       },
                       {
-                        imageSideCopy: "<span>10 minute live visual performance as the centerpiece of the works. Modern music samples mirror the increasingly aggressive behavior exhibited by the young boys. Artists evoke questions of power, competition amongst rivals, and the loss of innocence. Ultimately, tensions climax as the boys unknowingly murder one of their own.</span><span>Stay On Top.</span>",
+                        imageSideCopy: "<span>Performance.</span><span>10 minute live visual performance as the centerpiece of the works. Modern music samples mirror the increasingly aggressive behavior exhibited by the young boys. Artists evoke questions of power, competition amongst rivals, and the loss of innocence. Ultimately, tensions climax as the boys unknowingly murder one of their own.</span><span>Stay On Top.</span>",
                         item: '<iframe src="https://player.vimeo.com/video/92340669" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                       }],
                   },
@@ -166,7 +170,7 @@ function buildData(){
         text: 'ABOUT',
         childOptions : [
             new cascadingOption({
-                text:'SHOWS',
+                text:' ',
                 childOptions : {
                     intro: null,
                     image: null,

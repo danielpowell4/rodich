@@ -5,11 +5,15 @@
 
   <!-- important tags for site indexing on google / browser headers -->
     <!-- What is shown on in the tab itself-->
-    <title>Vibes - by blake rodich</title>
+    <title>_____br_____</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.png">
+    <meta charset="UTF-8">
 
     <!-- other property tags worthwhile -->
+    <meta name="keywords" content="blake, rodich, photo, emerging media, street, look, paris">
+    <meta name="author" content="blake rodich">
+
     <meta property="og:url" content="http://www.blakerodich.com" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Vibes - by blake rodich" />
@@ -73,9 +77,13 @@
               <div data-bind="foreach:section" style="display: block">
                 <div class="mixed-layout-container">
                   <div class="mixed-item mixed-copy" data-bind="html: $data.imageSideCopy"></div>
-                  <div class="mixed-item item1">
-                    <div class="embed-container" data-bind="html: $data.item"></div>
-                  </div>
+
+                    <div class="mixed-item item1">
+                      <div data-bind="if: $data.item">
+                        <div class="embed-container" data-bind="html: $data.item"></div>
+                      </div>
+                    </div>
+
                 </div>
               </div>
 
@@ -96,6 +104,8 @@
     </div>
 
   </section>
+
+  <footer class="bottom-bar"></footer>
 
   <!-- scripts -->
 

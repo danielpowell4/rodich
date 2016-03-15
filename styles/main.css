@@ -11,17 +11,31 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     font: inherit;
     vertical-align: baseline;
     font-family: "kepler-std-extended-display";
+    font-size: 14px;
+}
+
+/* background texture */
+body{
+  background: url('../img/backgroundTexture.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* top bar naviagation */
 .top-bar{
   display:block;
-  height: 40px;
+  height: 6vh;
   width: 100%;
   z-index: 999;
   position: fixed;
   top: 0px;
-  background-color: #fff;
+  background: url('../img/backgroundTexture.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .left-top{
@@ -61,30 +75,49 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     transform: translate(-50%,-50%);
 }
 
+/* bottom bar */
+.bottom-bar{
+  display:block;
+  height: 6vh;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  bottom: 0px;
+  background: url('../img/backgroundTexture.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* side bar naviagation */
 
 .active-side-nav{
   top: 26%;
   position: fixed;
-  right: 54px;
-  width: 122px;
+  right: 5.5vw;
+  width: 130px;
   line-height: 1.5;
 }
 
 .lower-side-nav{
   top: 67%;
   position: fixed;
-  right: 54px;
-  width: 122px;
+  right: 5.5vw;
+  width: 130px;
   line-height: 2;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .menu-container{
   list-style: none;
 }
 
+.menu-item{
+    font-size: 14px;
+}
 .menu-item:hover {
+  font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -96,14 +129,14 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 /* ----- main content wrap and container  ----- */
 .main-wrap{
   margin: 0 auto;
-  width: calc(100% - 80px);
+  width: calc(100% - 100px);
   max-width: 1440px;
 }
 
 .content-container {
   width: 85%;
   max-width: 85%;
-  margin: 40px 0;
+  margin: 6vh 0;
 }
 
 .content-container:first-child {
@@ -129,7 +162,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 
         /* writeUp copy */
         .all-text-text {
-          margin: 40px auto;
+          margin: 6vh auto;
           display: block;
         }
 
@@ -163,7 +196,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
-            margin: 40px auto 0;
+            margin: 6vh auto 0;
           }
 
           .mixed-copy{
