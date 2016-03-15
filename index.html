@@ -55,7 +55,7 @@
       <li data-bind="text: text, click: setCategory, css:{activeItem: activeCategory() === $data}" class="menu-item"></li>
     </ul>
     <ul data-bind="foreach: collections" class="active-side-nav menu-container">
-      <li data-bind="text: text, click: setCollection, css:{activeItem: activeCollection() === $data}" class="menu-item"></li>
+      <li data-bind="text: text, click: setCollection, css:{activeItem: activeCollection() === $data}" class="active-collection menu-item"></li>
     </ul>
   </nav>
 
@@ -127,7 +127,11 @@
     // -- for moving the menu in mobile
 
     $(function(){
-        $('.secret-menu').click(function(){
+        $('.secret-menu').click(moveMenu);
+        $('.active-collection').click(moveMenu);
+      });
+
+        function moveMenu(){
           var iteration=$(this).data('iteration')||1
           switch ( iteration) {
             case 1:
@@ -138,6 +142,7 @@
                   $('.menu-container').animate({
                     right: "5.5vw"
                   }, 285);
+                  $('.secret-menu').html('<span style="font-size: 32px">&#9755</span>')
               break;
 
             case 2:
@@ -148,13 +153,13 @@
                   $('.menu-container').animate({
                     right: "-240px"
                   }, 220);
+                  $('.secret-menu').html('&#9776')
               break;
           }
           iteration++;
           if (iteration>2) iteration=1
           $(this).data('iteration',iteration)
-        })
-      });
+        }
 
 
     </script>
