@@ -8,6 +8,7 @@ var cascadingOption = function(data){
 // starting 'home' view
 function buildinital(){
 
+// this is currently not wired up
   var home = new cascadingOption({
       text: 'Home',
       childOptions : [
@@ -42,8 +43,6 @@ function buildData(){
                 text:'STREET',
                 childOptions : {
                     intro: null,
-                    pullOutCopy : null,
-                    item1 : null,
                     image: ['img/photo/street/1_IanSmoke.jpg', 'img/photo/street/2_LukaIanSmoke.jpg', 'img/photo/street/3_SRDBacklit.jpg', 'img/photo/street/4_SRD_acwdetail.jpg', 'img/photo/street/5_Parisunderground1.jpg', 'img/photo/street/6_Parisunderground2.jpg', 'img/photo/street/7_DiorStreetPhone.jpg'],
                     writeUp: null,
                 }
@@ -52,8 +51,6 @@ function buildData(){
                 text:'LOOK',
                 childOptions : {
                     intro: null,
-                    pullOutCopy : null,
-                    item1 : null,
                     image: ['img/photo/look/1_EP_15x10_2.jpg', 'img/photo/look/2_EP_15x10_1.jpg', 'img/photo/look/3_AttaqueFrancais1.jpg',  'img/photo/look/4_AttaqueFrancais2.jpg',],
                     writeUp: null,
                 }
@@ -62,8 +59,6 @@ function buildData(){
                 text:'FACES',
                 childOptions : {
                     intro: null,
-                    pullOutCopy : null,
-                    item1 : null,
                     image: ['img/photo/faces/1_Antoine_Berlin.jpg', 'img/photo/faces/2_Surkin_Headshot.jpg'],
                     writeUp: null,
                 }
@@ -124,8 +119,6 @@ function buildData(){
                         item: '<iframe src="https://player.vimeo.com/video/92340669" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                       }],
                   },
-                  pullOutCopy : null,
-                  item1 : null,
                   image: ['img/emerging_media/STAY_ON_TOP/1_Nick_jungleinst.jpg', 'img/emerging_media/STAY_ON_TOP/2_SOTstill1.jpg', 'img/emerging_media/STAY_ON_TOP/3_SOTstill2.jpg'],
                   writeUp: null,
               }
@@ -148,12 +141,10 @@ function buildData(){
               childOptions : {
                   intro: {
                     section: [{
-                        imageSideCopy: '<span>Self Displacement.</span><span>Displacement of self through technology. Viewer’s reflection is multiplied and distorted with limited control offered to the viewer.</span><span>Viewer operates Arduino based one-of Midi controller which manipulates audio and visual parameters in the system.</span><span>No instructions provided.</span>',
+                        imageSideCopy: '<span>Platform created to explore deviations from standard linear film recording. </span><span>Arduino takes input from bend sensor within wearer’s glove and fires LED strobe when bend threshold is passed. Frame is grabbed from camera and inserted into generated loop of video, lengthening as the user contributes more frames. </span>',
                         item: '<iframe src="https://player.vimeo.com/video/82746292" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                       }],
                   },
-                  pullOutCopy : '<span>Platform created to explore deviations from standard linear film recording. </span><span>Arduino takes input from bend sensor within wearer’s glove and fires LED strobe when bend threshold is passed. Frame is grabbed from camera and inserted into generated loop of video, lengthening as the user contributes more frames. </span>',
-                  item1 : null,
                   image: ['img/emerging_media/STOPMOTION/1_stopmotion.jpg', 'img/emerging_media/STOPMOTION/2_stopmotion.jpg', 'img/emerging_media/STOPMOTION/3_stopmotion.jpg', 'img/emerging_media/STOPMOTION/4_stopmotion.jpg', 'img/emerging_media/STOPMOTION/5_stopmotion.jpg', 'img/emerging_media/STOPMOTION/6_stopmotion.jpg', 'img/emerging_media/STOPMOTION/7_stopmotion.jpg'],
                   writeUp: null,
               }
