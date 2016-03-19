@@ -195,6 +195,37 @@ var viewModel = function() {
     self.activeCategory = ko.observable();
     self.activeCollection = ko.observable(/*self.activeCategory().childOptions[0]*/);
 
+    self.iteration = 1;
+
+    self.moveMenu = function(){
+      switch (self.iteration) {
+        case 1:
+              // odd clicks
+              $('.secret-menu').addClass('activeMenu');
+              $('body').animate({
+                left: "-180px"
+              }, 300);
+              $('.menu-container').animate({
+                right: "5.5vw"
+              }, 285);
+          break;
+
+        case 2:
+              // even clicks
+              $('.secret-menu').removeClass('activeMenu');
+              $('body').animate({
+                left: "0px"
+              }, 300);
+              $('.menu-container').animate({
+                right: "-240px"
+              }, 220);
+          break;
+      }
+      self.iteration++;
+      if (self.iteration > 2)
+        {self.iteration = 1};
+    };
+
     self.activeItems = ko.observable();
 
     self.collections = ko.computed(function(){
