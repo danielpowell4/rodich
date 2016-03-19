@@ -16,11 +16,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 
 /* background texture */
 body{
-  background: url('../img/backgroundTexture.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #fbfbfb;
   position: relative;
 }
 
@@ -32,11 +28,7 @@ body{
   z-index: 999;
   position: fixed;
   top: 0px;
-  background: url('../img/backgroundTexture.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #fbfbfb;
 }
 
 .left-top{
@@ -87,11 +79,7 @@ body{
   z-index: 999;
   position: fixed;
   bottom: 0px;
-  background: url('../img/backgroundTexture.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #fbfbfb;
 }
 
 /* side bar naviagation */
