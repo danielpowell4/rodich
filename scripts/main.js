@@ -93,19 +93,6 @@ function buildData(){
               }
           }),
           new cascadingOption({
-              text:'DISPLACEMENT',
-              childOptions : {
-                intro: {
-                  section: [{
-                      imageSideCopy: '<span>Self Displacement.</span><span>Displacement of self through technology. Viewer’s reflection is multiplied and distorted with limited control offered to the viewer.</span><span>Viewer operates Arduino based one-of Midi controller which manipulates audio and visual parameters in the system.</span><span>No instructions provided.</span>',
-                      item: '<iframe src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
-                    }],
-                },
-                image: ['img/emerging_media/BLUESCREEN/1_BluescreenSchutte1.jpg', 'img/emerging_media/BLUESCREEN/2_BluescreenSchutteStill.jpg'],
-                writeUp: null,
-              }
-          }),
-          new cascadingOption({
               text:'RECLAMATION',
               childOptions : {
                   intro: {
@@ -141,6 +128,19 @@ function buildData(){
                   item1 : null,
                   image: ['img/emerging_media/STAY_ON_TOP/1_Nick_jungleinst.jpg', 'img/emerging_media/STAY_ON_TOP/2_SOTstill1.jpg', 'img/emerging_media/STAY_ON_TOP/3_SOTstill2.jpg'],
                   writeUp: null,
+              }
+          }),
+          new cascadingOption({
+              text:'DISPLACEMENT',
+              childOptions : {
+                intro: {
+                  section: [{
+                      imageSideCopy: '<span>Self Displacement.</span><span>Displacement of self through technology. Viewer’s reflection is multiplied and distorted with limited control offered to the viewer.</span><span>Viewer operates Arduino based one-of Midi controller which manipulates audio and visual parameters in the system.</span><span>No instructions provided.</span>',
+                      item: '<iframe src="https://www.youtube.com/embed/vgL3puDfuRg" frameborder="0" allowfullscreen></iframe>',
+                    }],
+                },
+                image: ['img/emerging_media/BLUESCREEN/1_BluescreenSchutte1.jpg', 'img/emerging_media/BLUESCREEN/2_BluescreenSchutteStill.jpg'],
+                writeUp: null,
               }
           }),
           new cascadingOption({
