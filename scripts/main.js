@@ -204,10 +204,10 @@ var viewModel = function() {
               $('.secret-menu').addClass('activeMenu');
               $('body').animate({
                 left: "-180px"
-              }, 300);
+              }, 400);
               $('.menu-container').animate({
                 right: "5.5vw"
-              }, 285);
+              }, 365);
           break;
 
         case 2:
@@ -215,10 +215,10 @@ var viewModel = function() {
               $('.secret-menu').removeClass('activeMenu');
               $('body').animate({
                 left: "0px"
-              }, 300);
+              }, 400);
               $('.menu-container').animate({
                 right: "-240px"
-              }, 220);
+              }, 340);
           break;
       }
       self.iteration++;
