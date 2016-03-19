@@ -129,7 +129,7 @@ function buildData(){
                 intro: {
                   section: [{
                       imageSideCopy: '<span>Self Displacement.</span><span>Displacement of self through technology. Viewer’s reflection is multiplied and distorted with limited control offered to the viewer.</span><span>Viewer operates Arduino based one-of Midi controller which manipulates audio and visual parameters in the system.</span><span>No instructions provided.</span>',
-                      item: '<iframe src="<iframe src="https://vimeo.com/159350714" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+                      item: '<iframe src="https://player.vimeo.com/video/159350714" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                     }],
                 },
                 image: ['img/emerging_media/BLUESCREEN/1_BluescreenSchutte1.jpg', 'img/emerging_media/BLUESCREEN/2_BluescreenSchutteStill.jpg'],
