@@ -10,7 +10,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     border: 0;
     font: inherit;
     vertical-align: baseline;
-    font-family: "kepler-std-extended-display";
+    font-family: "kepler-std", sans-serif;
     font-size: 14px;
 }
 
