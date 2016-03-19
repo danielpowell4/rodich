@@ -32,7 +32,9 @@
     <div class="left-top">
     </div>
     <div class="secret-menu menu">
-      &#9776
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
     </div>
   <!--  <div class="right-top">
       <a href="mailto:blake@gmail.com">
@@ -136,6 +138,7 @@
           switch ( iteration) {
             case 1:
                   // odd clicks
+                  $('.secret-menu').addClass('activeMenu');
                   $('body').animate({
                     left: "-180px"
                   }, 300);
@@ -145,7 +148,8 @@
               break;
 
             case 2:
-                  // odd clicks
+                  // even clicks
+                  $('.secret-menu').removeClass('activeMenu');
                   $('body').animate({
                     left: "0px"
                   }, 300);

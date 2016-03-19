@@ -43,6 +43,7 @@ body{
 .secret-menu{
   display: none;
 }
+
 .right-top{
   display: flex;
   position: absolute;
@@ -230,16 +231,59 @@ body{
   }
 
   /* show secret-menu */
-  .secret-menu{
-    display: block;
-    position: absolute;
-    top: 4px;
-    right: 16px;
-    font-size: 24px;
+  .secret-menu {
+      display: block;
+      position: absolute;
+      top: 18px;
+      right: 13px;
+      height: 27px;
+      width: 27px;
+      cursor: pointer;
+      z-index: 9;
+      transition: all 1s cubic-bezier(.19,1,.22,1);
   }
 
+  .secret-menu .line {
+      position: absolute;
+      display: block;
+      background: #191919;
+      width: 18px;
+      height: 2px;
+      left: 0;
+      transition: all .6s cubic-bezier(.5,.1,0,1.2);
+  }
+
+  .secret-menu .line.line-1 {
+      top: 0;
+  }
+
+  .secret-menu .line.line-2 {
+      top: 7px;
+      width: 14px;
+      transform: translateX(2px);
+      -webkit-transform: translateX(2px);
+  }
+
+  .secret-menu .line.line-3 {
+      top: 14px;
+  }
   .secret-menu:hover{
     cursor: pointer;
+  }
+  .activeMenu .line-1 {
+    width: 22px;
+    -webkit-transform: translateX(-11px) rotate(-45deg) translateY(12px);
+    transform: translateX(-11px) rotate(-45deg) translateY(12px);
+  }
+  .activeMenu .line-2{
+    opacity: 0;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  .activeMenu .line-3 {
+    width: 22px;
+    -webkit-transform: translateX(-8px) rotate(45deg) translateY(-8px);
+    transform: translateX(-8px) rotate(45deg) translateY(-8px);
   }
 
 }
