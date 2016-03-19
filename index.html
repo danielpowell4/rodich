@@ -57,7 +57,7 @@
       <li data-bind="text: text, click: setCategory, css:{activeItem: activeCategory() === $data}" class="menu-item"></li>
     </ul>
     <ul data-bind="foreach: collections" class="active-side-nav menu-container">
-      <li data-bind="text: text, click: function(){setCollection(); moveMenu()}, css:{activeItem: activeCollection() === $data}" class="active-collection menu-item"></li>
+      <li data-bind="text: text, click: function(){setCollection($data); moveMenu()}, css:{activeItem: activeCollection() === $data}" class="active-collection menu-item"></li>
     </ul>
   </nav>
 

@@ -237,7 +237,8 @@ var viewModel = function() {
       });
 
     self.setCategory = function(clickedCategory) {
-        return self.activeCategory(clickedCategory), self.setCollection(clickedCategory.childOptions[0]);
+        self.setCollection(clickedCategory.childOptions[0]);
+        return self.activeCategory(clickedCategory);
       };
 
     self.setCollection = function(clickedCollection) {
