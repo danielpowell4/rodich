@@ -30,6 +30,30 @@ function buildinital(){
 //fill our models with example data
 function buildData(){
 
+  /** ------------------------------------------
+    *      Collection
+    * ------------------------------------------
+    **/
+
+    var collection = new cascadingOption({
+        text: 'COLLECTION',
+        childOptions : [
+            new cascadingOption({
+                text:'To Seek Another Title',
+                childOptions : {
+                    intro: {
+                      section: [{
+                          imageSideCopy: '<span>To Seek Another Title</span><span>Ready to wear collection hand made in Paris.</span><span><em>To Seek Another Title</em> explores relative self conceptualization among dissociated class and social orders. Cues emerging from semiotic infrastructures are taken apart and reassembled. Graphics are absent from their expected placements and a minimal color palette proposes a degree of assimilation. Mid-weight twill, Poplin, Wool and Tarlatan reference the proletariat, bourgeoisie, aristocratic and creative classes, whose aesthetic codes are displaced through layered, stacked and loose fitting forms. Hierarchy is re-examined, re-ordered.</span> <span>Creative Direction & Photography: Blake Rodich<br/>Additional Photography: Antoine De Almeida & Jose Lossio<br/>Model: Christophe Van Waetermuelen</span>',
+                          item: null,
+                        }],
+                    },
+                    image: ['img/collection/tsat/TSAT_1+2.jpg', 'img/collection/tsat/TSAT_3.jpg', 'img/collection/tsat/TSAT_4+5.jpg', 'img/collection/tsat/TSAT_6.jpg', 'img/collection/tsat/TSAT_7+8.jpg', 'img/collection/tsat/TSAT_9.jpg', 'img/collection/tsat/TSAT_11+12.jpg','img/collection/tsat/TSAT_13.jpg', 'img/collection/tsat/TSAT_14+15.jpg', 'img/collection/tsat/TSAT_16.jpg', 'img/collection/tsat/TSAT_17+18.jpg', 'img/collection/tsat/TSAT_19.jpg', 'img/collection/tsat/TSAT_20+21.jpg', 'img/collection/tsat/TSAT_22.jpg', 'img/collection/tsat/TSAT_23+24.jpg', 'img/collection/tsat/TSAT_25.jpg'],
+                    writeUp: null,
+                }
+            })
+        ]
+    });
+
 
   /** ------------------------------------------
     *      Photography
@@ -185,7 +209,7 @@ function buildData(){
    *      Make sure to return all the variable you're after
    * ----------------------------------------------------------------
    **/
-    return [photography, emergingMedia, about];
+    return [collection, photography, emergingMedia, about];
 }
 
 var viewModel = function() {
