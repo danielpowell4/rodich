@@ -301,8 +301,8 @@ var viewModel = function() {
     console.log(url);
 
     if (url.includes('tsat')){
-      self.setCategory(collection);
-      self.moveMenu();
+      self.activeCategory(collection);
+      self.activeCollection(collection.childOptions[0]);
     }
 
 };
