@@ -212,6 +212,25 @@ function buildData(){
     return [collection, photography, emergingMedia, about];
 }
 
+var collection = new cascadingOption({
+    text: 'COLLECTION',
+    childOptions : [
+        new cascadingOption({
+            text:'TO SEEK ANOTHER TITLE',
+            childOptions : {
+                intro: {
+                  section: [{
+                      imageSideCopy: '<span>To Seek Another Title</span><span>Ready to wear collection hand made in Paris.</span><span>"To Seek Another Title" explores relative self conceptualization among dissociated class and social orders. Cues emerging from semiotic infrastructures are taken apart and reassembled. Graphics are absent from their expected placements and a minimal color palette proposes a degree of assimilation. Mid-weight twill, Poplin, Wool and Tarlatan reference the proletariat, bourgeois, aristocratic and creative classes, whose aesthetic codes are displaced through layered, stacked and loose fitting forms.</span><span>Hierarchy is re-examined, re-ordered.<br/><br/></span><span>Creative Direction & Photography: Blake Rodich<br/>Additional Photography: Antoine De Almeida & Jose Lossio<br/>Model: Christophe Van Waetermuelen</span>',
+                      item: null,
+                    }],
+                },
+                image: ['img/collection/tsat/TSAT_1+2.jpg', 'img/collection/tsat/TSAT_3.jpg', 'img/collection/tsat/TSAT_4+5.jpg', 'img/collection/tsat/TSAT_6.jpg', 'img/collection/tsat/TSAT_7+8.jpg', 'img/collection/tsat/TSAT_9.jpg', 'img/collection/tsat/TSAT_11+12.jpg','img/collection/tsat/TSAT_13.jpg', 'img/collection/tsat/TSAT_14+15.jpg', 'img/collection/tsat/TSAT_16.jpg', 'img/collection/tsat/TSAT_17+18.jpg', 'img/collection/tsat/TSAT_19.jpg', 'img/collection/tsat/TSAT_20+21.jpg', 'img/collection/tsat/TSAT_22.jpg', 'img/collection/tsat/TSAT_23+24.jpg', 'img/collection/tsat/TSAT_25.jpg'],
+                writeUp: null,
+            }
+        })
+    ]
+});
+
 var viewModel = function() {
     var self = this;
     self.categories = buildData();
@@ -266,6 +285,7 @@ var viewModel = function() {
         if (self.activeCollection().text === " " || self.activeCollection().text === "TO SEEK ANOTHER TITLE"){ // if the collection is blank close the menu for mobile
           self.moveMenu();
         };
+        console.log(clickedCategory);
       };
 
     self.setCollection = function(clickedCollection) {
@@ -274,6 +294,17 @@ var viewModel = function() {
 
     // initalize
     // self.setCategory(self.inital[0]);
+
+    var pathname = window.location.pathname; // Returns path only
+    var url      = window.location.href;
+
+    console.log(url);
+
+    if (url.includes('tsat')){
+      self.setCategory(collection);
+
+    }
+
 };
 
 ko.applyBindings(viewModel);
