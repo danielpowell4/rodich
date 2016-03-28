@@ -302,7 +302,7 @@ var viewModel = function() {
 
     if (url.includes('tsat')){
       self.setCategory(collection);
-
+      self.moveMenu();
     }
 
 };
