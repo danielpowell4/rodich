@@ -263,7 +263,7 @@ var viewModel = function() {
     self.setCategory = function(clickedCategory) {
         self.activeCategory(clickedCategory); // set category to active
         self.setCollection(clickedCategory.childOptions[0]);  // set first collection in category to active
-        if (self.activeCollection().text === " "){ // if the collection is blank close the menu for mobile
+        if (self.activeCollection().text === " " || self.activeCollection().text === "TO SEEK ANOTHER TITLE"){ // if the collection is blank close the menu for mobile
           self.moveMenu();
         };
       };
