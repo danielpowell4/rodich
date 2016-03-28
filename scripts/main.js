@@ -39,11 +39,11 @@ function buildData(){
         text: 'COLLECTION',
         childOptions : [
             new cascadingOption({
-                text:'To Seek Another Title',
+                text:'TO SEEK ANOTHER TITLE',
                 childOptions : {
                     intro: {
                       section: [{
-                          imageSideCopy: '<span>To Seek Another Title</span><span>Ready to wear collection hand made in Paris.</span><span>"To Seek Another Title" explores relative self conceptualization among dissociated class and social orders. Cues emerging from semiotic infrastructures are taken apart and reassembled. Graphics are absent from their expected placements and a minimal color palette proposes a degree of assimilation. Mid-weight twill, Poplin, Wool and Tarlatan reference the proletariat, bourgeoisie, aristocratic and creative classes, whose aesthetic codes are displaced through layered, stacked and loose fitting forms. Hierarchy is re-examined, re-ordered.</span> <span>Creative Direction & Photography: Blake Rodich<br/>Additional Photography: Antoine De Almeida & Jose Lossio<br/>Model: Christophe Van Waetermuelen</span>',
+                          imageSideCopy: '<span>To Seek Another Title</span><span>Ready to wear collection hand made in Paris.</span><span>"To Seek Another Title" explores relative self conceptualization among dissociated class and social orders. Cues emerging from semiotic infrastructures are taken apart and reassembled. Graphics are absent from their expected placements and a minimal color palette proposes a degree of assimilation. Mid-weight twill, Poplin, Wool and Tarlatan reference the proletariat, bourgeois, aristocratic and creative classes, whose aesthetic codes are displaced through layered, stacked and loose fitting forms.</span><span>Hierarchy is re-examined, re-ordered.<br/><br/></span><span>Creative Direction & Photography: Blake Rodich<br/>Additional Photography: Antoine De Almeida & Jose Lossio<br/>Model: Christophe Van Waetermuelen</span>',
                           item: null,
                         }],
                     },
