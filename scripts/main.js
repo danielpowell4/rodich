@@ -28,7 +28,7 @@ function buildinital(){
 }
 
 //fill our models with example data
-function buildData(){
+//function buildData(){
 
   /** ------------------------------------------
     *      Collection
@@ -209,9 +209,10 @@ function buildData(){
    *      Make sure to return all the variable you're after
    * ----------------------------------------------------------------
    **/
-    return [collection, photography, emergingMedia, about];
-}
+//    return [collection, photography, emergingMedia, about];
+//}
 
+/*
 var collection = new cascadingOption({
     text: 'COLLECTION',
     childOptions : [
@@ -230,81 +231,82 @@ var collection = new cascadingOption({
         })
     ]
 });
-
+*/
 var viewModel = function() {
-    var self = this;
-    self.categories = buildData();
-    self.inital = buildinital();
-    self.activeCategory = ko.observable();
-    self.activeCollection = ko.observable(/*self.activeCategory().childOptions[0]*/);
 
-    self.iteration = 1;
-
-    self.moveMenu = function(){
-      switch (self.iteration) {
-        case 1:
-              // odd clicks
-              $('.secret-menu').addClass('activeMenu');
-              $('body').animate({
-                left: "-180px"
-              }, 400);
-              $('.menu-container').animate({
-                right: "5.5vw"
-              }, 365);
-          break;
-
-        case 2:
-              // even clicks
-              $('.secret-menu').removeClass('activeMenu');
-              $('body').animate({
-                left: "0px"
-              }, 400);
-              $('.menu-container').animate({
-                right: "-240px"
-              }, 340);
-          break;
-      }
-      self.iteration++;
-      if (self.iteration > 2)
-        {self.iteration = 1};
-    };
-
-    self.activeItems = ko.observable();
-
-    self.collections = ko.computed(function(){
-        return self.activeCategory() ? self.activeCategory().childOptions : null;
-      });
-
-    self.items = ko.computed(function(){
-        return self.activeCollection() ? self.activeCollection().childOptions : null;
-      });
-
-    self.setCategory = function(clickedCategory) {
-        self.activeCategory(clickedCategory); // set category to active
-        self.setCollection(clickedCategory.childOptions[0]);  // set first collection in category to active
-        if (self.activeCollection().text === " " || self.activeCollection().text === "TO SEEK ANOTHER TITLE"){ // if the collection is blank close the menu for mobile
-          self.moveMenu();
-        };
-        console.log(clickedCategory);
-      };
-
-    self.setCollection = function(clickedCollection) {
-        return self.activeCollection(clickedCollection);
-      };
-
-    // initalize
-    // self.setCategory(self.inital[0]);
-
-    var pathname = window.location.pathname; // Returns path only
-    var url      = window.location.href;
-
-    console.log(url);
-
-    if (url.includes('tsat')){
-      self.activeCategory(collection);
-      self.activeCollection(collection.childOptions[0]);
-    }
 
 };
+
+var self = this;
+var categories = [collection, photography, emergingMedia, about]// buildData();
+var activeCategory = ko.observable();
+var activeCollection = ko.observable(/*self.activeCategory().childOptions[0]*/);
+
+var iteration = 1;
+
+function moveMenu(){
+  switch (iteration) {
+    case 1:
+          // odd clicks
+          $('.secret-menu').addClass('activeMenu');
+          $('body').animate({
+            left: "-180px"
+          }, 400);
+          $('.menu-container').animate({
+            right: "5.5vw"
+          }, 365);
+      break;
+
+    case 2:
+          // even clicks
+          $('.secret-menu').removeClass('activeMenu');
+          $('body').animate({
+            left: "0px"
+          }, 400);
+          $('.menu-container').animate({
+            right: "-240px"
+          }, 340);
+      break;
+  }
+  iteration++;
+  if (iteration > 2)
+    {iteration = 1};
+};
+
+var activeItems = ko.observable();
+
+var collections = ko.computed(function(){
+    return activeCategory() ? activeCategory().childOptions : null;
+  });
+
+var items = ko.computed(function(){
+    return activeCollection() ? activeCollection().childOptions : null;
+  });
+
+function setCategory(clickedCategory) {
+    activeCategory(clickedCategory); // set category to active
+    setCollection(clickedCategory.childOptions[0]);  // set first collection in category to active
+    if (activeCollection().text === " " || activeCollection().text === "TO SEEK ANOTHER TITLE"){ // if the collection is blank close the menu for mobile
+      moveMenu();
+    };
+    console.log(clickedCategory);
+  };
+
+function setCollection(clickedCollection) {
+    return activeCollection(clickedCollection);
+  };
+
+// initalize
+// self.setCategory(self.inital[0]);
+
+var pathname = window.location.pathname; // Returns path only
+var url      = window.location.href;
+
+console.log(url);
+
+if (url.includes('tsat')){
+  activeCategory(collection);
+  activeCollection(collection.childOptions[0]);
+}
 
 ko.applyBindings(viewModel);
