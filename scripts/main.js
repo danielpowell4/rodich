@@ -311,7 +311,6 @@ var viewModel = function() {
         if (self.activeCollection().text === " " || self.activeCollection().text === "TO SEEK ANOTHER TITLE"){ // if the collection is blank close the menu for mobile
           self.moveMenu();
         };
-        console.log(clickedCategory);
       };
 
     self.setCollection = function(clickedCollection) {
@@ -323,8 +322,6 @@ var viewModel = function() {
 
     var pathname = window.location.pathname; // Returns path only
     var url      = window.location.href;
-
-    console.log(url);
 
     if (url.includes('tsat')){
       self.activeCategory(collection);
