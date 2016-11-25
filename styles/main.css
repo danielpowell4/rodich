@@ -111,6 +111,10 @@ body{
   cursor: pointer;
 }
 
+.active-collection.menu-item {
+  margin-bottom: 6px;
+}
+
 .activeItem {
   color: #aaa;
 }
