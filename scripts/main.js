@@ -50,6 +50,19 @@ function buildData(){
                     image: ['img/collection/tsat/TSAT_1+2.jpg', 'img/collection/tsat/TSAT_3.jpg', 'img/collection/tsat/TSAT_4+5.jpg', 'img/collection/tsat/TSAT_6.jpg', 'img/collection/tsat/TSAT_7+8.jpg', 'img/collection/tsat/TSAT_9.jpg', 'img/collection/tsat/TSAT_11+12.jpg','img/collection/tsat/TSAT_13.jpg', 'img/collection/tsat/TSAT_14+15.jpg', 'img/collection/tsat/TSAT_16.jpg', 'img/collection/tsat/TSAT_17+18.jpg', 'img/collection/tsat/TSAT_19.jpg', 'img/collection/tsat/TSAT_20+21.jpg', 'img/collection/tsat/TSAT_22.jpg', 'img/collection/tsat/TSAT_23+24.jpg', 'img/collection/tsat/TSAT_25.jpg'],
                     writeUp: null,
                 }
+            }),
+            new cascadingOption({
+                text:'IN ORDER OF APPEARANCE',
+                childOptions : {
+                    intro: {
+                      section: [{
+                          imageSideCopy: '<span>In Order of Appearance</span><span>Ready to Wear collection hand made in Paris.</span><span>“In Order Of Appearance” explores themes of contextual identity, social belonging and locus of control. Hand drawn graphics make reference to contemporary french cinema. Romain Gavras’ <em>Notre Jour Viendra</em> enquires outsiders if they are rejects or saviors, Sylvain Chomet takes us on a journey away from home in his beloved <em>Triplets of Belleville</em> and, finally, Gaspar Noé implores us to consider how much we really control in <em>Carne.</em> Marbled red herringbone drapes over the body on a multi-layered coat, while poly-nylon pants featuring technical detailing meet heavy cotton pieces with poplin patches, oversized fits and re-cut forms.<span>Creative Direction & Photography: Blake Rodich<br/>Model: Christophe Van Waetermuelen</span>',
+                          item: null,
+                        }],
+                    },
+                    image: ['img/collection/iooa/IOOA_01.jpg', 'img/collection/iooa/IOOA_02.jpg', 'img/collection/iooa/IOOA_03.jpg', 'img/collection/iooa/IOOA_04.jpg', 'img/collection/iooa/IOOA_05.jpg', 'img/collection/iooa/IOOA_06.jpg', 'img/collection/iooa/IOOA_07.jpg','img/collection/tsat/TSAT_13.jpg', 'img/collection/iooa/IOOA_08.jpg', 'img/collection/iooa/IOOA_09.jpg', 'img/collection/iooa/IOOA_10.jpg', 'img/collection/iooa/IOOA_11.jpg'],
+                    writeUp: null,
+                }
             })
         ]
     });
@@ -227,6 +240,19 @@ var collection = new cascadingOption({
                 image: ['img/collection/tsat/TSAT_1+2.jpg', 'img/collection/tsat/TSAT_3.jpg', 'img/collection/tsat/TSAT_4+5.jpg', 'img/collection/tsat/TSAT_6.jpg', 'img/collection/tsat/TSAT_7+8.jpg', 'img/collection/tsat/TSAT_9.jpg', 'img/collection/tsat/TSAT_11+12.jpg','img/collection/tsat/TSAT_13.jpg', 'img/collection/tsat/TSAT_14+15.jpg', 'img/collection/tsat/TSAT_16.jpg', 'img/collection/tsat/TSAT_17+18.jpg', 'img/collection/tsat/TSAT_19.jpg', 'img/collection/tsat/TSAT_20+21.jpg', 'img/collection/tsat/TSAT_22.jpg', 'img/collection/tsat/TSAT_23+24.jpg', 'img/collection/tsat/TSAT_25.jpg'],
                 writeUp: null,
             }
+        }),
+        new cascadingOption({
+            text:'IN ORDER OF APPEARANCE',
+            childOptions : {
+                intro: {
+                  section: [{
+                      imageSideCopy: '<span>In Order of Appearance</span><span>Ready to Wear collection hand made in Paris.</span><span>“In Order Of Appearance” explores themes of contextual identity, social belonging and locus of control. Hand drawn graphics make reference to contemporary french cinema. Romain Gavras’ <em>Notre Jour Viendra</em> enquires outsiders if they are rejects or saviors, Sylvain Chomet takes us on a journey away from home in his beloved <em>Triplets of Belleville</em> and, finally, Gaspar Noé implores us to consider how much we really control in <em>Carne.</em> Marbled red herringbone drapes over the body on a multi-layered coat, while poly-nylon pants featuring technical detailing meet heavy cotton pieces with poplin patches, oversized fits and re-cut forms.<span>Creative Direction & Photography: Blake Rodich<br/>Model: Christophe Van Waetermuelen</span>',
+                      item: null,
+                    }],
+                },
+                image: ['img/collection/iooa/IOOA_01.jpg', 'img/collection/iooa/IOOA_02.jpg', 'img/collection/iooa/IOOA_03.jpg', 'img/collection/iooa/IOOA_04.jpg', 'img/collection/iooa/IOOA_05.jpg', 'img/collection/iooa/IOOA_06.jpg', 'img/collection/iooa/IOOA_07.jpg','img/collection/tsat/TSAT_13.jpg', 'img/collection/iooa/IOOA_08.jpg', 'img/collection/iooa/IOOA_09.jpg', 'img/collection/iooa/IOOA_10.jpg', 'img/collection/iooa/IOOA_11.jpg'],
+                writeUp: null,
+            }
         })
     ]
 });
@@ -303,6 +329,10 @@ var viewModel = function() {
     if (url.includes('tsat')){
       self.activeCategory(collection);
       self.activeCollection(collection.childOptions[0]);
+    }
+    if (url.includes('iooa')){
+      self.activeCategory(collection);
+      self.activeCollection(collection.childOptions[1]);
     }
 
 };
