@@ -3,7 +3,7 @@ var cascadingOption = function(data){
     var self = this;
     self.text = data.text;
     self.childOptions = data.childOptions;
-}
+};
 
 // starting 'home' view
 function buildinital(){
@@ -18,7 +18,7 @@ function buildinital(){
                   image: null,
                   writeUp: 'BETABETABETA',
                   pullOutCopy: null,
-                  item1: null,
+                  item1: null
               }
           })
       ]
@@ -28,7 +28,7 @@ function buildinital(){
 }
 
 //fill our models with example data
-function buildData(){
+
 
   /** ------------------------------------------
     *      Collection
@@ -43,7 +43,7 @@ function buildData(){
                 childOptions : {
                     intro: {
                       section: [{
-                          imageSideCopy: '<span>To Seek Another Title</span><span>Ready to wear collection hand made in Paris.</span><span>"To Seek Another Title" explores relative self conceptualization among dissociated class and social orders. Cues emerging from semiotic infrastructures are taken apart and reassembled. Graphics are absent from their expected placements and a minimal color palette proposes a degree of assimilation. Mid-weight twill, Poplin, Wool and Tarlatan reference the proletariat, bourgeois, aristocratic and creative classes, whose aesthetic codes are displaced through layered, stacked and loose fitting forms.</span><span>Hierarchy is re-examined, re-ordered.<br/><br/></span><span>Creative Direction & Photography: Blake Rodich<br/>Additional Photography: Antoine De Almeida & Jose Lossio<br/>Model: Christophe Van Waetermuelen</span>',
+                          imageSideCopy: '<span>To Seek Another Title</span><span>Ready to wear collection hand made in Paris.</span><span>"To Seek Another Title" explores relative self conceptualization among dissociated class and social orders. Cues emerging from semiotic infrastructures are taken apart and reassembled. Graphics are absent from their expected placements and a minimal color palette proposes a degree of assimilation. Mid-weight twill, Poplin, Wool and Tarlatan reference the proletariat, bourgeois, aristocratic and creative classes, whose aesthetic codes are displaced through layered, stacked and loose fitting forms.</span><span>Hierarchy is re-examined, re-ordered.</span><br/><span>Creative Direction & Photography: Blake Rodich<br/>Additional Photography: Antoine De Almeida & Jose Lossio<br/>Model: Christophe Van Waetermuelen</span>',
                           item: null,
                         }],
                     },
@@ -56,7 +56,7 @@ function buildData(){
                 childOptions : {
                     intro: {
                       section: [{
-                          imageSideCopy: '<span>In Order of Appearance</span><span>Ready to Wear collection hand made in Paris.</span><span>“In Order Of Appearance” explores themes of contextual identity, social belonging and locus of control. Hand drawn graphics make reference to contemporary french cinema. Romain Gavras’ <em>Notre Jour Viendra</em> enquires outsiders if they are rejects or saviors, Sylvain Chomet takes us on a journey away from home in his beloved <em>Triplets of Belleville</em> and, finally, Gaspar Noé implores us to consider how much we really control in <em>Carne.</em> Marbled red herringbone drapes over the body on a multi-layered coat, while poly-nylon pants featuring technical detailing meet heavy cotton pieces with poplin patches, oversized fits and re-cut forms.<span>Creative Direction & Photography: Blake Rodich<br/>Model: Christophe Van Waetermuelen</span>',
+                          imageSideCopy: '<span>In Order of Appearance</span><span>Ready to Wear collection hand made in Paris.</span><span>“In Order Of Appearance” explores themes of contextual identity, social belonging and locus of control. Hand drawn graphics make reference to contemporary french cinema. Romain Gavras’ <em>Notre Jour Viendra</em> enquires outsiders if they are rejects or saviors, Sylvain Chomet takes us on a journey away from home in his beloved <em>Triplets of Belleville</em> and, finally, Gaspar Noé implores us to consider how much we really control in <em>Carne.</em> Marbled red herringbone drapes over the body on a multi-layered coat, while poly-nylon pants featuring technical detailing meet heavy cotton pieces with poplin patches, oversized fits and re-cut forms.<br/><br/><span>Creative Direction & Photography: Blake Rodich<br/>Model: Christophe Van Waetermuelen</span>',
                           item: null,
                         }],
                     },
@@ -217,111 +217,80 @@ function buildData(){
         ]
     });
 
+var self = this;
+var categories = [collection, photography, emergingMedia, about];
+var activeCategory = ko.observable();
+var activeCollection = ko.observable(/*self.activeCategory().childOptions[0]*/);
 
-  /** ---------------------------------------------------------------
-   *      Make sure to return all the variable you're after
-   * ----------------------------------------------------------------
-   **/
-    return [collection, photography, emergingMedia, about];
+var iteration = 1;
+
+function moveMenu(){
+  switch (iteration) {
+    case 1:
+          // odd clicks
+          $('.secret-menu').addClass('activeMenu');
+          $('body').animate({
+            left: "-180px"
+          }, 400);
+          $('.menu-container').animate({
+            right: "5.5vw"
+          }, 365);
+      break;
+
+    case 2:
+          // even clicks
+          $('.secret-menu').removeClass('activeMenu');
+          $('body').animate({
+            left: "0px"
+          }, 400);
+          $('.menu-container').animate({
+            right: "-240px"
+          }, 340);
+      break;
+  }
+  iteration++;
+  if (iteration > 2)
+    {iteration = 1}
 }
 
-var collection = new cascadingOption({
-    text: 'COLLECTION',
-    childOptions : [
-        new cascadingOption({
-            text:'TO SEEK ANOTHER TITLE',
-            childOptions : {
-                intro: {
-                  section: [{
-                      imageSideCopy: '<span>To Seek Another Title</span><span>Ready to wear collection hand made in Paris.</span><span>"To Seek Another Title" explores relative self conceptualization among dissociated class and social orders. Cues emerging from semiotic infrastructures are taken apart and reassembled. Graphics are absent from their expected placements and a minimal color palette proposes a degree of assimilation. Mid-weight twill, Poplin, Wool and Tarlatan reference the proletariat, bourgeois, aristocratic and creative classes, whose aesthetic codes are displaced through layered, stacked and loose fitting forms.</span><span>Hierarchy is re-examined, re-ordered.<br/><br/></span><span>Creative Direction & Photography: Blake Rodich<br/>Additional Photography: Antoine De Almeida & Jose Lossio<br/>Model: Christophe Van Waetermuelen</span>',
-                      item: null,
-                    }],
-                },
-                image: ['img/collection/tsat/TSAT_1+2.jpg', 'img/collection/tsat/TSAT_3.jpg', 'img/collection/tsat/TSAT_4+5.jpg', 'img/collection/tsat/TSAT_6.jpg', 'img/collection/tsat/TSAT_7+8.jpg', 'img/collection/tsat/TSAT_9.jpg', 'img/collection/tsat/TSAT_11+12.jpg','img/collection/tsat/TSAT_13.jpg', 'img/collection/tsat/TSAT_14+15.jpg', 'img/collection/tsat/TSAT_16.jpg', 'img/collection/tsat/TSAT_17+18.jpg', 'img/collection/tsat/TSAT_19.jpg', 'img/collection/tsat/TSAT_20+21.jpg', 'img/collection/tsat/TSAT_22.jpg', 'img/collection/tsat/TSAT_23+24.jpg', 'img/collection/tsat/TSAT_25.jpg'],
-                writeUp: null,
-            }
-        }),
-        new cascadingOption({
-            text:'IN ORDER OF APPEARANCE',
-            childOptions : {
-                intro: {
-                  section: [{
-                      imageSideCopy: '<span>In Order of Appearance</span><span>Ready to Wear collection hand made in Paris.</span><span>“In Order Of Appearance” explores themes of contextual identity, social belonging and locus of control. Hand drawn graphics make reference to contemporary french cinema. Romain Gavras’ <em>Notre Jour Viendra</em> enquires outsiders if they are rejects or saviors, Sylvain Chomet takes us on a journey away from home in his beloved <em>Triplets of Belleville</em> and, finally, Gaspar Noé implores us to consider how much we really control in <em>Carne.</em> Marbled red herringbone drapes over the body on a multi-layered coat, while poly-nylon pants featuring technical detailing meet heavy cotton pieces with poplin patches, oversized fits and re-cut forms.<br/><span>Creative Direction & Photography: Blake Rodich<br/>Model: Christophe Van Waetermuelen</span>',
-                      item: null,
-                    }],
-                },
-                image: ['img/collection/iooa/IOOA_01.jpg', 'img/collection/iooa/IOOA_02.jpg', 'img/collection/iooa/IOOA_03.jpg', 'img/collection/iooa/IOOA_04.jpg', 'img/collection/iooa/IOOA_05.jpg', 'img/collection/iooa/IOOA_06.jpg', 'img/collection/iooa/IOOA_07.jpg','img/collection/tsat/TSAT_13.jpg', 'img/collection/iooa/IOOA_08.jpg', 'img/collection/iooa/IOOA_09.jpg', 'img/collection/iooa/IOOA_10.jpg', 'img/collection/iooa/IOOA_11.jpg'],
-                writeUp: null,
-            }
-        })
-    ]
-});
+var activeItems = ko.observable();
 
-var viewModel = function() {
-    var self = this;
-    self.categories = buildData();
-    self.inital = buildinital();
-    self.activeCategory = ko.observable();
-    self.activeCollection = ko.observable(/*self.activeCategory().childOptions[0]*/);
+var collections = ko.computed(function(){
+    return activeCategory() ? activeCategory().childOptions : null;
+  });
 
-    self.iteration = 1;
-
-    self.moveMenu = function(){
-      switch (self.iteration) {
-        case 1:
-              // odd clicks
-              $('.secret-menu').addClass('activeMenu');
-              $('body').animate({
-                left: "-180px"
-              }, 400);
-              $('.menu-container').animate({
-                right: "5.5vw"
-              }, 365);
-          break;
-
-        case 2:
-              // even clicks
-              $('.secret-menu').removeClass('activeMenu');
-              $('body').animate({
-                left: "0px"
-              }, 400);
-              $('.menu-container').animate({
-                right: "-240px"
-              }, 340);
-          break;
-      }
-      self.iteration++;
-      if (self.iteration > 2)
-        {self.iteration = 1};
-    };
-
-    self.activeItems = ko.observable();
-
-    self.collections = ko.computed(function(){
-        return self.activeCategory() ? self.activeCategory().childOptions : null;
-      });
-
-    self.items = ko.computed(function(){
-        return self.activeCollection() ? self.activeCollection().childOptions : null;
-      });
 
     self.setCategory = function(clickedCategory) {
         self.activeCategory(clickedCategory); // set category to active
         self.setCollection(clickedCategory.childOptions[0]);  // set first collection in category to active
-        if (self.activeCollection().text === " " || self.activeCollection().text === "TO SEEK ANOTHER TITLE"){ // if the collection is blank close the menu for mobile
+        if (self.activeCollection().text === " " || self.activeCollection().text === "TO SEEK ANOTHER TITLE" || self.activeCollection().text === "IN ORDER OF APPEARANCE" ) { // if the collection is blank close the menu for mobile
           self.moveMenu();
-        };
+        }
       };
 
-    self.setCollection = function(clickedCollection) {
-        return self.activeCollection(clickedCollection);
-      };
+var items = ko.computed(function(){
+    return activeCollection() ? activeCollection().childOptions : null;
+  });
 
-    // initalize
-    // self.setCategory(self.inital[0]);
+function setCategory(clickedCategory) {
+    activeCategory(clickedCategory); // set category to active
+    setCollection(clickedCategory.childOptions[0]);  // set first collection in category to active
+    if (activeCollection().text === " " || activeCollection().text === "TO SEEK ANOTHER TITLE" || activeCollection().text === "IN ORDER OF APPEARANCE"){ // if the collection is blank close the menu for mobile
+      moveMenu();
+    }
+    console.log(clickedCategory);
+  }
 
-    var pathname = window.location.pathname; // Returns path only
-    var url      = window.location.href;
+function setCollection(clickedCollection) {
+    return activeCollection(clickedCollection);
+  }
+
+// initalize
+// self.setCategory(self.inital[0]);
+
+var pathname = window.location.pathname; // Returns path only
+var url      = window.location.href;
+
 
     if (url.includes('tsat')){
       self.activeCategory(collection);
@@ -332,6 +301,4 @@ var viewModel = function() {
       self.activeCollection(collection.childOptions[1]);
     }
 
-};
-
-ko.applyBindings(viewModel);
+ko.applyBindings();
