@@ -60,7 +60,7 @@ function buildinital(){
                           item: null,
                         }],
                     },
-                    image: ['img/collection/iooa/IOOA_01.jpg', 'img/collection/iooa/IOOA_02.jpg', 'img/collection/iooa/IOOA_03.jpg', 'img/collection/iooa/IOOA_04.jpg', 'img/collection/iooa/IOOA_05.jpg', 'img/collection/iooa/IOOA_06.jpg', 'img/collection/iooa/IOOA_07.jpg','img/collection/tsat/TSAT_13.jpg', 'img/collection/iooa/IOOA_08.jpg', 'img/collection/iooa/IOOA_09.jpg', 'img/collection/iooa/IOOA_10.jpg', 'img/collection/iooa/IOOA_11.jpg'],
+                    image: ['img/collection/iooa/IOOA_01.jpg', 'img/collection/iooa/IOOA_02.jpg', 'img/collection/iooa/IOOA_03.jpg', 'img/collection/iooa/IOOA_04.jpg', 'img/collection/iooa/IOOA_05.jpg', 'img/collection/iooa/IOOA_06.jpg', 'img/collection/iooa/IOOA_07.jpg', 'img/collection/iooa/IOOA_08.jpg', 'img/collection/iooa/IOOA_09.jpg', 'img/collection/iooa/IOOA_10.jpg', 'img/collection/iooa/IOOA_11.jpg'],
                     writeUp: null,
                 }
             })
